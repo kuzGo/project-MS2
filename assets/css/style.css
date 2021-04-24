@@ -115,8 +115,9 @@ body {
   top: 50%;
   bottom: 50%;
   left: 50%;
-  color: #f1091f;
-  letter-spacing: 2px;
+  color: #edf109;
+  letter-spacing: 6px;
+  font-weight: 600;
   transform: translate(-50%, -50%);
 }
 .quote-btn {
@@ -124,7 +125,9 @@ body {
   text-align: center;
   top: 70%;
   height: 46px;
+  width: 15rem;
   border-radius: 23px;
+  border:none;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #00adff;
@@ -133,8 +136,8 @@ body {
 }
 /*--------------------About Us Section ---------------- */
 .man-img {
-  width: 200px;
-  height: 200px;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   margin-bottom: 85px;
 }
@@ -176,13 +179,13 @@ body {
 };
 
 
-.sneaker {
+.icy-cocktail{
   min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sneaker img {
+.icy-cocktail img {
   width: 20rem;
   z-index: 20;
   transition: all 0.75s ease-out;
@@ -198,50 +201,7 @@ body {
   );
   position: absolute;
   border-radius: 50%;
-  z-index: 0;
-}
-
-.info h1 {
-  font-size: 3rem;
-  transition: all 0.75s ease-out;
-}
-.info h3 {
-  font-size: 1.3rem;
-  padding: 2rem 0rem;
-  color: #585858;
-  font-weight: lighter;
-  transition: all 0.75s ease-out;
-}
-.sizes {
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.75s ease-out;
-}
-.sizes button {
-  padding: 0.5rem 2rem;
-  background: none;
-  border: none;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #585858;
-}
-button.active {
-  background: #585858;
-  color: white;
-}
-.purchase {
-  margin-top: 5rem;
-  transition: all 0.75s ease-out;
-}
-.purchase button {
-  width: 100%;
-  padding: 1rem 0rem;
-  background: #f54642;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 30px;
-  font-weight: bolder;
+  z-index: -1;
+  margin-top: 60px;
+  margin-left: 20px;
 }
