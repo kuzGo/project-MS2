@@ -77,24 +77,33 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hero image section  -->
     <section id="hero-img">
       <div class="hero-container"></div>
       <h1 id="header-text">London Libre</h1>
       <p class="hero-text">Cocktails|Bar Hire|Events|Every Ocassion</p>
       <button class="quote-btn" type="submit" value="text">Get a Quote!</button>
     </section>
+    <!-- END of Hero image section  -->
+
     <section class="about-section">
       <div class="container-fluid">
         <div class="row">
           <h2 class="about-header">Who We Are?</h2>
-          <div class="col-md-6 col-sm-12">
-            <p class="about-text">
+
+          <div class="col-md-6 col-sm-12 about-text1">
+            <span class="about-header"
+              >Find Out More <i class="fas fa-chevron-down up"></i>
+            </span>
+            <p class="about-text d-none">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo
               molestias impedit corrupti doloremque itaque voluptatibus earum.
               Laudantium accusamus aspernatur expedita placeat repellendus, eius
               dicta consequatur labore. Id, cumque voluptatem!
             </p>
           </div>
+
           <div class="col-md-6 col-sm-12">
             <img
               src="assets/images/dd.jpg"
@@ -105,30 +114,32 @@
         </div>
       </div>
     </section>
+
+      <!-- Video section -->
+      <section>
+        <div class="barman">
+        <video autoplay muted loop>
+          <source src="assets/video/barman.mp4" type="video/mp4">
+        </video>
+      </div>
+      </section>
+
     <!-- Cards section  -->
     <section class="about-section">
-    <div class="card-container">
-      <div class="card1">
-           <div class="sneaker">
-              <div class="circle"></div>
-              <img src="assets/images/cocktail.png" alt="adidas">
-           </div>
-           <div class="info">
-              <h1 class="title">Adidas ZX</h1>
-              <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
-              <div class="sizes">
-                  <button>39</button>
-                  <button>40</button>
-                  <button class="active">42</button>
-                  <button>44</button>
-              </div>
-              <div class="purchase">
-                  <button>Purchase</button>
-              </div>
-            </div> 
+      <div class="card-container container-fluid">
+        <div class="card1">
+          <div class="icy-cocktail">
+            <div class="circle"></div>
+            <!-- Photo used from :https://www.pexels.com/photo/glasses-of-fresh-icy-cocktails-on-marble-table-6542713/ .
+               Image background removed using :https://pixlr.com/remove-background/-->
+            <img src="assets/images/cocktail.png" alt="Coctail glass" />
+          </div>
+          <div class="info">
+            <h1 class="title">Margarita</h1>
+          </div>
+        </div>
       </div>
-  </div> 
-</section> 
-  <script src="./app.js"></script>
+    </section>
+    <script src="./app.js"></script>
   </body>
 </html>
