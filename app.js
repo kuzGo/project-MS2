@@ -1,12 +1,13 @@
+
+//Display text paragraph when button is clicked
+const about = document.querySelector('.about-text1');
+
 //Movement Animation to happen
-const card = document.querySelector(".card1");
-const container = document.querySelector(".card-container");
+ const card = document.querySelector(".card1");
+ const container = document.querySelector(".card-container");
 //Items
-const title = document.querySelector(".title");
-const sneaker = document.querySelector(".sneaker img");
-const purchase = document.querySelector(".purchase");
-const description = document.querySelector(".info h3");
-const sizes = document.querySelector(".sizes");
+ const title = document.querySelector(".title");
+ const icyCocktail = document.querySelector(".icy-cocktail img");
 
 //Moving Animation Event
 container.addEventListener("mousemove", (e) => {
@@ -18,11 +19,8 @@ container.addEventListener("mousemove", (e) => {
 container.addEventListener("mouseenter", (e) => {
   card.style.transition = "none";
   //Popout
-  title.style.transform = "translateZ(150px)";
-  sneaker.style.transform = "translateZ(200px) rotateZ(-45deg)";
-  description.style.transform = "translateZ(125px)";
-  sizes.style.transform = "translateZ(100px)";
-  purchase.style.transform = "translateZ(75px)";
+  title.style.transform = "translateZ(150px)"; //150px
+  icyCocktail.style.transform = "translateZ(200px) rotateZ(45deg)"; //200px
 });
 //Animate Out
 container.addEventListener("mouseleave", (e) => {
@@ -30,8 +28,22 @@ container.addEventListener("mouseleave", (e) => {
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
   //Popback
   title.style.transform = "translateZ(0px)";
-  sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
-  description.style.transform = "translateZ(0px)";
-  sizes.style.transform = "translateZ(0px)";
-  purchase.style.transform = "translateZ(0px)";
+  icyCocktail.style.transform = "translateZ(0px) rotateZ(0deg)";
+  
 });
+//Display about text when "learn More" button is hovered over
+
+about.addEventListener('click', e => {
+  about.querySelector('p').classList.toggle('d-none'); 
+});
+//  about.addEventListener('mouseleave', e => {
+//   about.querySelector('p').classList.add('d-none')
+// });
+
+//  plus.addEventListener('mouseenter',e => {
+//   plus.classList.remove('.learn-btn');
+//  });
+ 
+//  plus.addEventListener('click',e => {
+//   plus.classList.add('d-none');
+//  });
