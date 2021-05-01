@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <!-- Navigation bar used from Bootstrap 5 -->
+    <!-- Navigation bar used from Bootstrap 5 https://getbootstrap.com/docs/5.0/components/navbar/ -->
     <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand mr-4" href="index.html">
@@ -93,9 +93,9 @@
           <h2 class="about-header">Who We Are?</h2>
 
           <div class="col-md-6 col-sm-12 about-text1">
-            <span class="about-header"
-              >Find Out More <i class="fas fa-chevron-down up"></i>
-            </span>
+            <span class="about-header">Find Out More <span class="about-plus">+</span> 
+          </span>
+            <hr class="text-divide">
             <p class="about-text d-none">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo
               molestias impedit corrupti doloremque itaque voluptatibus earum.
@@ -106,7 +106,7 @@
 
           <div class="col-md-6 col-sm-12">
             <img
-              src="assets/images/dd.jpg"
+              src="assets/images/darko.jpg"
               class="man-img"
               alt="Photo of a man"
             />
@@ -116,11 +116,10 @@
     </section>
 
       <!-- Video section -->
-      <section>
-        <div class="barman">
-        <video autoplay muted loop>
-          <source src="assets/video/barman.mp4" type="video/mp4">
-        </video>
+      <section class="about-section">
+        <div class="col-md-6  offset-md-3 col-sm-12 col-lg- 7 barman">
+          <video src="assets/video/barman.mp4" class="barman-vid" type="video/mp4" muted loop></video>
+          <h2 class="barman-action">See me in action !!</h2>
       </div>
       </section>
 
@@ -135,11 +134,26 @@
             <img src="assets/images/cocktail.png" alt="Coctail glass" />
           </div>
           <div class="info">
-            <h1 class="title">Margarita</h1>
+            <h2 class="title">Margarita</h2>
           </div>
         </div>
       </div>
+
+      <!-- card num 2 -->
+      
+        <!-- <div class="card1">
+          <div class="icy-cocktail">
+            <div class="circle"></div> -->
+            <!-- Photo used from :https://www.pexels.com/photo/glasses-of-fresh-icy-cocktails-on-marble-table-6542713/ .
+               Image background removed using :https://pixlr.com/remove-background/-->
+            <!-- <img src="assets/images/cocktail.png" alt="Coctail glass" />
+          </div>
+          <div class="info">
+            <h2 class="title">Margarita</h2>
+          </div>
+        </div> -->
+     
     </section>
-    <script src="./app.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
