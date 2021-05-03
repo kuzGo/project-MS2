@@ -1,8 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 body {
   font-family: "Rock Salt", cursive;
@@ -26,7 +21,7 @@ body {
 }
 .navbar {
   background-color: rgba(0, 0, 0, 0.4);
-  /* #0a0c10 */
+
 }
 .nav-link {
   margin: 8px;
@@ -144,17 +139,16 @@ body {
   .man-img {
     width: 15rem;
     height: 15rem;
-    margin-bottom: 85px;
-    margin-left: 85px;
+    margin-left: 45px;
   }
   .card1 {
     transform-style: preserve-3d;
     min-height: 70vh;
-    width: 20rem;
+    /* width: 20rem; */
     border-radius: 30px;
     padding: 0rem 5rem;
     box-shadow: 0 20px 20px  rgba(232,8,205,0.58), 0px 0px 50px rgba(155,41,216,0.76);
-  };
+  }
   .circle {
     width: 10rem;
     height: 10rem;
@@ -170,13 +164,33 @@ body {
     margin-left: 20px;
   }
 
+  .nav {
+    display: grid;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(10,12,16);
+    justify-content: center;
+  }
 }
 .about-text {
   text-align: center;
   color: #ee82ee;
   padding: 50px 50px;
   margin-bottom: 85px;
-  transition: all ease-out 5s;
+  transition: all ease-out 2s;
+  opacity: 0;
+}
+.show-about-text{
+  text-align: center;
+  color: #ee82ee;
+  padding: 50px 50px;
+  margin-bottom: 85px;
+  transition: all ease-in-out 5s;
+  opacity: 1;
 }
 .about-header {
   text-align: center;
@@ -207,11 +221,11 @@ body {
 .card1 {
   transform-style: preserve-3d;
   min-height: 70vh;
-  width: 25rem;
+  /* width: 25rem; */
   border-radius: 30px;
   padding: 0rem 5rem;
   box-shadow: 0 20px 20px  rgba(232,8,205,0.58), 0px 0px 50px rgba(155,41,216,0.76);
-};
+}
 
 
 .icy-cocktail{
@@ -251,7 +265,7 @@ body {
   border-radius: 23px;
 }
 .barman-action{
- position: absolute;
+  position: absolute;
   width: 100%;
   height: 90vh;
   top : 0;
@@ -262,6 +276,23 @@ body {
   justify-content: space-around;
   background-color: rgb(10 12 16);
   color: rgba(232,8,205,0.58);
+  transition: all ease-in-out 3s;
+  opacity: 1;
+}
+.barman-action-appear {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  top : 0;
+  left: 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(10 12 16);
+  color: rgba(232,8,205,0.58);
+  transition: all ease-in-out 3s;
 }
 
 hr:not([size]) {
@@ -271,4 +302,14 @@ hr:not([size]) {
   margin-left: 55px;
   background: rgb(10 12 16);
   background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(110,9,121,1) 52%, rgba(0,212,255,1) 80%);
-};
+}
+/* Google maps styling */
+
+div #map {
+  min-height: 400px;
+  width :100%;
+  border-color: #c265fc;
+  overflow: visible;
+  border: solid 10px;
+  border-radius: 6px;
+}
