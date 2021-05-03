@@ -1,6 +1,6 @@
 
 //Movement Animation to happen
- const card = document.querySelector(".card1");
+  const card = document.querySelector(".card1");
 
  const container = document.querySelector(".card-container");
 
@@ -10,14 +10,14 @@
 
 //Moving Animation Event
 container.addEventListener("mousemove", (e) => {
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 105;
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 105;
+  let xAxis = (window.innerWidth / 3 - e.pageX) / 105;
+  let yAxis = (window.innerHeight / 3 - e.pageY) / 105;
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
 //Animate In
 container.addEventListener("mouseenter", (e) => {
-  card.style.transition = "none";
+   card.style.transition = "none";
   //Popout
   title.style.transform = "translateZ(80px)"; 
   icyCocktail.style.transform = "translateZ(90px) rotateZ(25deg)"; 
@@ -37,7 +37,7 @@ container.addEventListener("mouseleave", (e) => {
 const about = document.querySelector('.about-text1');
 
 about.addEventListener('click', e => {
-   about.querySelector('p').classList.toggle('d-none'); 
+   about.querySelector('p').classList.toggle('show-about-text'); 
 });
 
 //Playing video animation when hovering mouse 
@@ -51,7 +51,8 @@ barmanVid.addEventListener('mouseout', e => {
   barmanVid.pause();
 });
 const play = document.querySelector(".barman-action");
-play.addEventListener("click", e =>{
+play.addEventListener("click", e => {
   console.log(play);
- play.classList.toggle('barman-action');
+ play.classList.toggle('barman-action-appear');
+ play.classList.remove("barman-action");
 });
