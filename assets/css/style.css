@@ -19,10 +19,6 @@ body {
   padding: 3px;
   box-shadow: 0px 0px 20px 9px;
 }
-.navbar {
-  background-color: rgba(0, 0, 0, 0.4);
-
-}
 .nav-link {
   margin: 8px;
   display: flex;
@@ -84,6 +80,11 @@ body {
   -o-background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.hero-wave {
+  position: absolute;
+   bottom: 0; 
+  fill: rgb(29,30,33);
 }
 .hero-container {
   height: 90vh;
@@ -147,7 +148,8 @@ body {
     /* width: 20rem; */
     border-radius: 30px;
     padding: 0rem 5rem;
-    box-shadow: 0 20px 20px  rgba(232,8,205,0.58), 0px 0px 50px rgba(155,41,216,0.76);
+    box-shadow: 0 20px 20px  rgba(232,8,205,0.58),
+               0px 0px 50px rgba(155,41,216,0.76);
   }
   .circle {
     width: 10rem;
@@ -162,6 +164,19 @@ body {
     z-index: -1;
     margin-top: 60px;
     margin-left: 20px;
+  }
+  .barman video {
+    max-width: 100%;
+    max-height: 60vh;
+    top : 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .barman-divide {
+    background: url(../images/neon-signs.jpg);
+    object-fit: cover;
+    max-width: 60vh;
+    background-color: rgba(0,212,255,1);
   }
 
   .nav {
@@ -198,7 +213,7 @@ body {
   color: #ee82ee;
   font-size: 29px;
   padding: 50px 50px;
-  background-color: rgb(10 12 16);
+  background-color: rgb(10,12,16);
 }
 
 .about-section {
@@ -264,42 +279,12 @@ body {
   object-fit: cover;
   margin-left: 65px;
 }
-/* .barman-action{
-  position: absolute;
-  width: 100%;
-  height: 90vh;
-  top : 0;
-  left: 0;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(10 12 16);
-  color: rgba(232,8,205,0.58);
-  transition: all ease-in-out 3s;
-  opacity: 1;
-} */
-/* .barman-action-appear {
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 90vh;
-  top : 0;
-  left: 0;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(10 12 16);
-  color: rgba(232,8,205,0.58);
-  transition: all ease-in-out 3s;
-} */
 
 hr:not([size]) {
   height: 9px;
   width: 60%;
-  /* https://cssgradient.io/ used for background gradient color*/
   margin-left: 55px;
+  /* https://cssgradient.io/ used for background gradient color*/
   background: rgb(10 12 16);
   background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(110,9,121,1) 52%, rgba(0,212,255,1) 80%);
 }
@@ -308,21 +293,38 @@ hr:not([size]) {
 div #map {
   min-height: 500px;
   max-width :100%;
+  margin: 95px auto;
 }
 .festivals{
-  color: #a9ea0a;
-  text-shadow: -20px -5px 20px #c94612;
-  box-shadow: 1px 1px 18px 4px #7690fc;
-  line-height: 22px;
+  color: #85e6f0;
+  text-shadow: -20px -5px 20px #85e6f0;
+  box-shadow: 1px 1px 18px 4px #85e6f0;
   letter-spacing: 0.269em;
+  font-family: 'Railway',sans-serif;
+  font-weight: 700;
+  font-size: 5vh;
+  border-style: none;
+  border-radius: 50px;
+  width: 70%;
+  min-height: 90px;
+  margin:90px auto;
+  display: block;
+  background:none;
+}
+.rooftop {
+  color: #ee82ee;
+  text-transform: capitalize;
+  text-shadow: -20px -5px 20px #ee82ee;
+  box-shadow: 1px 1px 18px 4px#ee82ee;
+  letter-spacing: 0.269em;
+  font-family: 'Railway',sans-serif;
+  font-size: 5vh;
   font-weight: 700;
   border-style: none;
-  border-radius: 50%;
-  max-width: 220px;
-  min-height: 220px;
-  margin:auto;
+  border-radius: 50px;
+  width: 70%;
+  min-height: 90px;
+  margin:90px auto;
   display: block;
-  /* Photo downloaded from : https://www.pexels.com/photo/aerial-view-of-concert-on-grounds-1692695/  */
-  background: url(../images/festival.jpg);
-  background-size: cover;
+  background: none;
 }
