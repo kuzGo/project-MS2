@@ -70,7 +70,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link coctail-link--text" href="#"
+              <a class="nav-link coctail-link--text" href="cocktail.html"
                 ><i class="fas fa-cocktail"></i> Coctails</a
               >
             </li>
@@ -107,7 +107,7 @@
               cocktail bars. Now, at London Libre bar we can offer a diversity
               of cocktails and service that fits all the cultures and types of
               events.We are specialised in weddings, corporate
-              events,private events,festivals and concerts.
+              events,private events, festivals and concerts.
             </p>
           </div>
 
@@ -124,8 +124,8 @@
     <div class="barman-divide"></div>
     <!-- Video section -->
     <section class="about-section">
-      <div class="col-md-6 col-sm-12 barman">
-
+      <div class="col-md-6 col-sm-12 offset-lg-3 barman">
+          <div class="row">
         <!-- Video by Denys Gromov from Pexels  https://www.pexels.com/video/pouring-alcoholic-drink-on-a-cocktail-glass-4765778/-->
         <video
           src="assets/video/cocktail-vid.mp4"
@@ -134,19 +134,22 @@
           muted
           loop
         ></video>
+        </div>
       </div>
     </section>
     <!-- END of Video section -->
 
     <!-- Google Maps section -->
-    <section class="about-section">
+    <section class="about-section" id="neon-bg--image">
+       <!-- SVG created using https://getwaves.io/ -->
+       <svg xmlns="http://www.w3.org/2000/svg" class="map-wave" viewbox="0 0 1440 320"><path  fill-opacity="1" d="M0,224L80,240C160,256,320,288,480,293.3C640,299,800,277,960,266.7C1120,256,1280,256,1360,256L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
     <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 col-sm-12">
-             <button type="buttton" id="drop" onclick="dropFestival()" class="festivals">Music Events</button>
+             <button type="buttton" id="drop" onclick="dropFestival()" class="festivals">Fancy trying our cocktails?</button>
           </div>
           <div class="col-md-6 col-sm-12">
-            <button type="buttton" onclick="dropBars()" class="rooftop">Off Season</button>
+            <button type="buttton" id="drop-season" onclick="dropBars()" class="rooftop">Always mixing for you</button>
           </div>
              <div class="col-md-12 col-sm-12 col-lg-12">  
               <div id="map"></div>
@@ -155,28 +158,47 @@
         </div>
     </div>
   </section>
+  <!-- <section class="about-section">
+    <h3>Cocktails</h3>
+  </section> -->
 
     <!-- Cards section  -->
     <section class="about-section">
-      <div class="card-container container-fluid">
+      <div class="card-container">
         <div class="card1">
-          <div class="icy-cocktail">
+          <div class="icy-cocktail"> 
             <div class="circle"></div>
             <!-- Photo used from :https://www.pexels.com/photo/glasses-of-fresh-icy-cocktails-on-marble-table-6542713/ .
-               Image background removed using :https://pixlr.com/remove-background/-->
+               Image background removed using :https://pixlr.com/remove-background/ -->
+            <img src="assets/images/cocktail.png" alt="Coctail glass" />
+          </div>
+          <div class="info">
+            <h2 class="title">Cocktails</h2>
+            <button type="button" class="random-cocktail">Random Mixology</button>
+          </div>
+        </div>
+        <!-- card2 -->
+
+        <div class="card1">
+          <div class="icy-cocktail"> 
+            <div class="circle"></div>
+            <!-- Photo used from :https://www.pexels.com/photo/glasses-of-fresh-icy-cocktails-on-marble-table-6542713/ .
+               Image background removed using :https://pixlr.com/remove-background/ -->
             <img src="assets/images/cocktail.png" alt="Coctail glass" />
           </div>
           <div class="info">
             <h2 class="title">Margarita</h2>
           </div>
-        </div>
+        </div> 
+        <!-- end of card 2 -->
       </div>
 
     </section>
-    <!-- Added A as a first letter to api key -->
+   
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzjCtSn4eTgmVDARjqe09GAfI-W3DokUs&callback=initMap"></script> 
     <script src="./js/gmaps.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/cocktails.js"></script>
     
   </body>
 </html>

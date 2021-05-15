@@ -6,6 +6,8 @@ body {
   align-items: center;
   justify-content: center;
   perspective: 2000px;
+  padding: 0;
+  margin: 0;
 }
 
 /*--------------------Navigation bar---------------- */
@@ -38,6 +40,7 @@ body {
   font-weight: 700;
   border-style: solid;
   border-radius: 23px;
+ 
 }
 .home-link--text:hover {
   color: #c265fc;
@@ -83,8 +86,13 @@ body {
 }
 .hero-wave {
   position: absolute;
-   bottom: 0; 
+  bottom: 0; 
   fill: rgb(29,30,33);
+}
+.map-wave {
+  position: absolute;
+  bottom: 0; 
+  fill:#0a0c10;
 }
 .hero-container {
   height: 90vh;
@@ -132,8 +140,10 @@ body {
 .man-img {
   width: 25rem;
   height: 25rem;
-  margin-bottom: 85px;
-  margin-left: 85px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 @media screen and (max-width:640px) {
   
@@ -172,13 +182,6 @@ body {
     left: 0;
     object-fit: cover;
   }
-  .barman-divide {
-    background: url(../images/neon-signs.jpg);
-    object-fit: cover;
-    max-width: 60vh;
-    background-color: rgba(0,212,255,1);
-  }
-
   .nav {
     display: grid;
     flex-wrap: wrap;
@@ -187,7 +190,7 @@ body {
     list-style: none;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(10,12,16);
+    background-color: #0a0c10ed;
     justify-content: center;
   }
 }
@@ -222,20 +225,22 @@ body {
 }
 .about-plus {
   margin-left: 55px;
+  
 }
 
 /* Cards styling */
 
 .card-container {
-  width: 60%;
+  /* width: 100%; */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: rgb(10 12 16);
 }
 .card1 {
   transform-style: preserve-3d;
   min-height: 70vh;
+  margin-top: 65px;
   /* width: 25rem; */
   border-radius: 30px;
   padding: 0rem 5rem;
@@ -277,13 +282,14 @@ body {
   top : 0;
   left: 0;
   object-fit: cover;
-  margin-left: 65px;
+  margin: auto;
 }
 
 hr:not([size]) {
   height: 9px;
-  width: 60%;
+  max-width: 90%;
   margin-left: 55px;
+  border-radius: 6px;
   /* https://cssgradient.io/ used for background gradient color*/
   background: rgb(10 12 16);
   background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(110,9,121,1) 52%, rgba(0,212,255,1) 80%);
@@ -292,8 +298,20 @@ hr:not([size]) {
 
 div #map {
   min-height: 500px;
-  max-width :100%;
-  margin: 95px auto;
+  max-width :85%;
+  margin: 5rem auto 15rem;;
+  border-radius: 23px;
+  box-shadow: 14px -5px 20px 20px #6f359a94;
+}
+#neon-bg--image{
+  background: url(../images/neon-signs.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .festivals{
   color: #85e6f0;
@@ -302,14 +320,14 @@ div #map {
   letter-spacing: 0.269em;
   font-family: 'Railway',sans-serif;
   font-weight: 700;
-  font-size: 5vh;
+  font-size: 2vh;
   border-style: none;
   border-radius: 50px;
   width: 70%;
   min-height: 90px;
   margin:90px auto;
   display: block;
-  background:none;
+  background:rgb( 16,10,12);
 }
 .rooftop {
   color: #ee82ee;
@@ -318,7 +336,7 @@ div #map {
   box-shadow: 1px 1px 18px 4px#ee82ee;
   letter-spacing: 0.269em;
   font-family: 'Railway',sans-serif;
-  font-size: 5vh;
+  font-size: 2vh;
   font-weight: 700;
   border-style: none;
   border-radius: 50px;
@@ -326,5 +344,5 @@ div #map {
   min-height: 90px;
   margin:90px auto;
   display: block;
-  background: none;
+  background:rgb( 16,10,12);
 }
