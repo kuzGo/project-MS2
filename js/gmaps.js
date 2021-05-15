@@ -7,7 +7,7 @@ const festivals = [
   {position:{lat :51.4036, lng : -0.3378},content:{html :'<h4>Hampton Court Palace Festival</h4><p>Summer festival at Hampton Court Palace.</p><a href="https://hamptoncourtpalacefestival.com/" target="_blank">See official website</a>'}},  
   {position:{lat :51.5366, lng : -0.0390},content:{html :'<h4>All Points East Festival</h4><p>All Points East is a festival in London’s Victoria Park.</p><a href="https://www.allpointseastfestival.com/" target="_blank">See official website</a>'}},  
   {position:{lat :51.4589, lng : -0.1493},content:{html :'<h4>YAM Carnival</h4><p>Summer festival at Clapham Common, London.</p><a href="https://yamcarnival.com/" target="_blank">See official website</a>'}},  
-  {position:{lat :51.5082, lng : -0.0596},content:{html :'<h4>Junction 2</h4><p>Summer festival taking place at Tobacco Dock, Wapping.</p><a href="https://www.junction2.london/" target="_blank">See official website</a>'}},  //Tobacco Dock, Wapping  Brockwell Park, Brixton
+  {position:{lat :51.5082, lng : -0.0596},content:{html :'<h4>Junction 2</h4><p>Summer festival taking place at Tobacco Dock, Wapping.</p><a href="https://www.junction2.london/" target="_blank">See official website</a>'}}, 
   {position:{lat :51.4506, lng : -0.1069}, content:{html :'<h4>Wide Awake</h4><p>Bringing together notes from the underground, Wide Awake, is a festival for music fans looking for something different.</p><a href="https://wideawakelondon.co.uk/" target="_blank">See official website</a>'}}, 
   
 ];
@@ -40,7 +40,7 @@ function dropFestival() {
   }
   function dropBars() {
     clearMarkers();
-  
+   
     for (let i = 0; i < bars.length; i++) {
       addMarker(bars[i].position, i * 500,bars[i].content.html);
     }
@@ -51,11 +51,12 @@ function dropFestival() {
     window.setTimeout(() => {
       marker = new google.maps.Marker({
           position: position,
-          title:"Testing Title",
+          title:"Click for info",
           map:map,
           animation: google.maps.Animation.DROP,
         });
         google.maps.event.addListener(marker, 'click', () =>{ 
+         
           infowindow.open(map, marker); 
           infowindow.setContent(content); 
         });
