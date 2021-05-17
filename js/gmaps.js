@@ -31,6 +31,7 @@ function initMap() {
   });
 }
 function dropFestival() {
+
     clearMarkers();
   
     for (let i = 0; i < festivals.length; i++) {
@@ -41,8 +42,8 @@ function dropFestival() {
   function dropBars() {
     clearMarkers();
    
-    for (let i = 0; i < bars.length; i++) {
-      addMarker(bars[i].position, i * 500,bars[i].content.html);
+    for (let j = 0; j < bars.length; j++) {
+      addMarker(bars[j].position, j * 500,bars[j].content.html);
     }
   }
   // Used for reference of how to add timeout to markers https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration#maps_marker_animations_iteration-html
@@ -70,3 +71,17 @@ function dropFestival() {
     markers = [];
   };
   
+
+  let barMarkers = document.getElementById("drop-season");
+  barMarkers.addEventListener("click", event => {
+    
+      clearMarkers();
+      dropBars();
+  });
+
+  let festivalMarkers = document.getElementById("drop");
+  festivalMarkers.addEventListener("click", event => {
+    dropFestival();
+  });
+
+ 
