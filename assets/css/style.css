@@ -11,6 +11,9 @@ body {
 }
 
 /*--------------------Navigation bar---------------- */
+.nav {
+  justify-content: center;
+}
 
 .navbar-collapse {
   flex-grow: 0;
@@ -29,7 +32,11 @@ body {
   font-size: 2rem;
   color: #c265fc;
 }
-.home-link--text {
+.active-button {
+  font-size: 1.6rem;
+}
+
+.home-link--text{
   font-family: "Rock Salt", sans-serif;
   color: #ee82ee;
   text-transform: capitalize;
@@ -40,7 +47,7 @@ body {
   font-weight: 700;
   border-style: solid;
   border-radius: 23px;
- 
+ background-color: transparent;
 }
 .home-link--text:hover {
   color: #c265fc;
@@ -131,7 +138,7 @@ body {
   border:none;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #00adff;
+  color: #000;
   background-color: #eb04ef;
   box-shadow: -2px 2px 20px 4px #eb04ef;
 }
@@ -152,36 +159,7 @@ body {
     height: 15rem;
     margin-left: 45px;
   }
-  .card1 {
-    transform-style: preserve-3d;
-    min-height: 70vh;
-    /* width: 20rem; */
-    border-radius: 30px;
-    padding: 0rem 5rem;
-    box-shadow: 0 20px 20px  rgba(232,8,205,0.58),
-               0px 0px 50px rgba(155,41,216,0.76);
-  }
-  .circle {
-    width: 10rem;
-    height: 10rem;
-    background: linear-gradient(
-      to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75)
-    );
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    margin-top: 60px;
-    margin-left: 20px;
-  }
-  .barman video {
-    max-width: 100%;
-    max-height: 60vh;
-    top : 0;
-    left: 0;
-    object-fit: cover;
-  }
+  
   .nav {
     display: grid;
     flex-wrap: wrap;
@@ -194,6 +172,7 @@ body {
     justify-content: center;
   }
 }
+
 .about-text {
   text-align: center;
   color: #ee82ee;
@@ -222,6 +201,7 @@ body {
 .about-section {
   background-color: rgb(10 12 16);
   position: relative;
+  overflow: hidden;
 }
 .about-plus {
   margin-left: 55px;
@@ -241,12 +221,33 @@ body {
   transform-style: preserve-3d;
   min-height: 70vh;
   margin-top: 65px;
-  /* width: 25rem; */
+  width: 25rem;
   border-radius: 30px;
   padding: 0rem 5rem;
   box-shadow: 0 20px 20px  rgba(232,8,205,0.58), 0px 0px 50px rgba(155,41,216,0.76);
 }
-
+/* Bootstrap's breakpoint https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+@media screen and (max-width: 767.98px){
+  .card1 {
+    transform-style: preserve-3d;
+    min-height: 70vh;
+    width: 20rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px  rgba(232,8,205,0.58),
+                0px 0px 50px rgba(155,41,216,0.76);
+  }
+  .barman-video {
+    display: block;
+    width: 80%;
+    max-height: calc(.5625 * 80vw);
+    top: 0;
+    left: 0;
+    margin: 5rem auto;
+    
+}
+  
+}
 
 .icy-cocktail{
   min-height: 15vh;
@@ -274,15 +275,37 @@ body {
   margin-top: 60px;
   margin-left: 20px;
 }
+.random-cocktail {
+  font-family: "Rock Salt", sans-serif;
+  color: #ee82ee;
+  text-transform: capitalize;
+  text-shadow: -20px -5px 20px #ee82ee;
+  box-shadow: 1px 1px 18px 4px#ee82ee;
+  line-height: 22px;
+  letter-spacing: 0.269em;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 23px;
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  height: 7%;
+}
+.title{
+  text-align: center;
+  color: #eb04ef;
+  display: block;
+}
 /* Video styling */
 
 .barman video {
-  max-width: 100%;
-  max-height: 60vh;
+  display: block;
+  width: 60%;
+  max-height: calc(.5625 * 80vw);
   top : 0;
   left: 0;
-  object-fit: cover;
-  margin: auto;
+  margin: 5rem auto;
 }
 
 hr:not([size]) {
@@ -313,7 +336,7 @@ div #map {
   background-position: center;
   background-attachment: fixed;
 }
-.festivals{
+.festivals {
   color: #85e6f0;
   text-shadow: -20px -5px 20px #85e6f0;
   box-shadow: 1px 1px 18px 4px #85e6f0;
