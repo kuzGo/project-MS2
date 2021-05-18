@@ -1,58 +1,77 @@
-
+const about = document.querySelector('.about-text1');
+let plusButton = document.querySelector(".about-plus");
+const barmanVid = document.querySelector(".barman-vid");
+const buttonText = document.getElementById('drop');
+const rooftopButton = document.getElementById('drop-season');
+let closeNavIcon = document.querySelector(".fa-align-right");
+let closeNavButtom = document.querySelector(".navbar-toggler");
 //Movement Animation to happen
-  const card = document.querySelector(".card1");
-
- const container = document.querySelector(".card-container");
+ const card = document.querySelector(".card1");
+//  const container = document.querySelector(".card-container");
 
 //Items
  const title = document.querySelector(".title");
  const icyCocktail = document.querySelector(".icy-cocktail img");
 
-//Moving Animation Event
-container.addEventListener("mousemove", (e) => {
-  let xAxis = (window.innerWidth / 3 - e.pageX) / 105;
-  let yAxis = (window.innerHeight / 3 - e.pageY) / 105;
-  card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-});
-
-//Animate In
-container.addEventListener("mouseenter", (e) => {
+// Animate In
+card.addEventListener("mouseenter", (e) => {
    card.style.transition = "none";
   //Popout
-  title.style.transform = "translateZ(80px)"; 
+   title.style.transform = "translateZ(80px)"; 
   icyCocktail.style.transform = "translateZ(90px) rotateZ(25deg)"; 
 });
 //Animate Out
-container.addEventListener("mouseleave", (e) => {
-  card.style.transition = "all 0.5s ease";
+card.addEventListener("mouseleave", (e) => {
+  card.style.transition = "all 1.5s ease";
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
   //Popback
-  title.style.transform = "translateZ(0px)";
+   title.style.transform = "translateZ(0px)";
   icyCocktail.style.transform = "translateZ(0px) rotateZ(0deg)";
   
 });
 
 //Display about text when "find out" is clicked
-
-const about = document.querySelector('.about-text1');
-
-about.addEventListener('click', e => {
-   about.querySelector('p').classList.toggle('show-about-text'); 
+plusButton.addEventListener('click', e => {
+   about.classList.toggle('show-about-text');
+  
 });
 
 //Playing video animation when hovering mouse 
 //credit for inspiration https://www.youtube.com/watch?v=dx4oAxaR1As
-const barmanVid = document.querySelector(".barman-vid");
 
-barmanVid.addEventListener('mouseenter', e => {
+barmanVid.addEventListener('mouseenter', function(event) {
   barmanVid.play();
 });
-barmanVid.addEventListener('mouseout', e => {
+barmanVid.addEventListener('mouseout', event => {
   barmanVid.pause();
 });
-const play = document.querySelector(".barman-action");
-play.addEventListener("click", e => {
-  console.log(play);
- play.classList.toggle('barman-action-appear');
- play.classList.remove("barman-action");
+
+buttonText.addEventListener('mouseover', event => {
+ buttonText.innerText ='Music Events'
 });
+// 
+buttonText.addEventListener('mouseout', event => {
+  buttonText.innerText = "Fancy trying our cocktails?"
+});
+
+rooftopButton.addEventListener('mouseover', event => {
+  rooftopButton.innerText ='Off Season'
+});
+// Event listener will change text of cocktails button back 
+rooftopButton.addEventListener('mouseout', event => {
+  rooftopButton.innerText = "Always mixing for you"
+});
+
+
+ let activeButton = document.querySelectorAll('.nav-link').forEach(activeButton =>{
+   activeButton.addEventListener("click", (e)=> {
+   activeButton.classList.toggle("active-button");
+   
+  });
+ });
+ 
+// Event listener will change burger button icon when clicked
+closeNavButtom.addEventListener('click', () => {
+  closeNavIcon.classList.toggle("fa-times");
+})
+
