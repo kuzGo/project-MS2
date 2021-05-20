@@ -1,13 +1,12 @@
-
 body {
   font-family: "Rock Salt", cursive;
   min-height: 100vh;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   perspective: 2000px;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /*--------------------Navigation bar---------------- */
@@ -18,25 +17,29 @@ body {
 .navbar-collapse {
   flex-grow: 0;
 }
+
 .libre-logo {
   border-radius: 50%;
   border-style: solid;
   padding: 3px;
   box-shadow: 0px 0px 20px 9px;
 }
+
 .nav-link {
   margin: 8px;
   display: flex;
 }
+
 .navbar-toggler {
   font-size: 2rem;
   color: #c265fc;
 }
+
 .active-button {
   font-size: 1.6rem;
 }
 
-.home-link--text{
+.home-link--text {
   font-family: "Rock Salt", sans-serif;
   color: #ee82ee;
   text-transform: capitalize;
@@ -47,11 +50,13 @@ body {
   font-weight: 700;
   border-style: solid;
   border-radius: 23px;
- background-color: transparent;
+  background-color: transparent;
 }
+
 .home-link--text:hover {
   color: #c265fc;
 }
+
 .contact-link--text {
   color: #85e6f0;
   text-transform: capitalize;
@@ -63,9 +68,11 @@ body {
   border-style: solid;
   border-radius: 23px;
 }
+
 .contact-link--text:hover {
   color: #00b2ca;
 }
+
 .coctail-link--text {
   color: #7690fc;
   text-transform: capitalize;
@@ -77,9 +84,11 @@ body {
   border-style: solid;
   border-radius: 23px;
 }
+
 .coctail-link--text:hover {
   color: #039eda;
 }
+
 /*--------------------Hero Image Section ---------------- */
 #hero-img {
   background: url(../images/hero-neon.jpg);
@@ -91,22 +100,26 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
 .hero-wave {
   position: absolute;
-  bottom: 0; 
-  fill: rgb(29,30,33);
+  bottom: 0;
+  fill: rgb(29, 30, 33);
 }
+
 .map-wave {
   position: absolute;
-  bottom: 0; 
-  fill:#0a0c10;
+  bottom: 0;
+  fill: #0a0c10;
 }
+
 .hero-container {
   height: 90vh;
   position: relative;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 #header-text {
   position: absolute;
   top: 42%;
@@ -117,6 +130,7 @@ body {
   letter-spacing: 2px;
   transform: translate(-50%, -50%);
 }
+
 .hero-text {
   position: absolute;
   text-align: center;
@@ -128,6 +142,7 @@ body {
   font-weight: 600;
   transform: translate(-50%, -50%);
 }
+
 .quote-btn {
   position: absolute;
   text-align: center;
@@ -135,13 +150,14 @@ body {
   height: 46px;
   width: 15rem;
   border-radius: 23px;
-  border:none;
+  border: none;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000;
   background-color: #eb04ef;
   box-shadow: -2px 2px 20px 4px #eb04ef;
 }
+
 /*--------------------About Us Section ---------------- */
 
 .man-img {
@@ -150,16 +166,17 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
+
 @media screen and (max-width:640px) {
-  
+
   .man-img {
     width: 15rem;
     height: 15rem;
     margin-left: 45px;
   }
-  
+
   .nav {
     display: grid;
     flex-wrap: wrap;
@@ -171,6 +188,24 @@ body {
     background-color: #0a0c10ed;
     justify-content: center;
   }
+  .random-cocktail {
+    font-family: "Rock Salt", sans-serif;
+    color: #ee82ee;
+    text-transform: capitalize;
+    text-shadow: -20px -5px 20px #ee82ee;
+    box-shadow: 1px 1px 18px 4px#ee82ee;
+    line-height: 22px;
+    letter-spacing: 0.269em;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 23px;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    height: 7%;
+  }
+
 }
 
 .about-text {
@@ -181,7 +216,8 @@ body {
   transition: all ease-out 2s;
   opacity: 0;
 }
-.show-about-text{
+
+.show-about-text {
   text-align: center;
   color: #ee82ee;
   padding: 50px 50px;
@@ -189,13 +225,15 @@ body {
   transition: all ease-in-out 5s;
   opacity: 1;
 }
+
 .about-header {
   text-align: center;
   display: inline-block;
   color: #ee82ee;
   font-size: 29px;
+  border: none;
   padding: 50px 50px;
-  background-color: rgb(10,12,16);
+  background-color: rgb(10, 12, 16);
 }
 
 .about-section {
@@ -203,39 +241,63 @@ body {
   position: relative;
   overflow: hidden;
 }
-.about-plus {
-  margin-left: 55px;
-  
-}
 
+.about-plus {
+  margin-left: 15rem;
+}
+.about-plus ::after {
+  content: "-";
+}
 /* Cards styling */
 
 .card-container {
-  /* width: 100%; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: rgb(10 12 16);
 }
+
 .card1 {
   transform-style: preserve-3d;
-  min-height: 70vh;
+  min-height: 90vh;
   margin-top: 65px;
-  width: 25rem;
+  width: 35rem;
   border-radius: 30px;
   padding: 0rem 5rem;
-  box-shadow: 0 20px 20px  rgba(232,8,205,0.58), 0px 0px 50px rgba(155,41,216,0.76);
+  box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
 }
+
+.card2 {
+  min-height: 90vh;
+  margin: 65px;
+  width: 35rem;
+  height: 90vh;
+  border-radius: 30px;
+  padding: 1rem 1rem;
+  box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
+}
+
 /* Bootstrap's breakpoint https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
-@media screen and (max-width: 767.98px){
+@media screen and (max-width: 767.98px) {
   .card1 {
     transform-style: preserve-3d;
-    min-height: 70vh;
     width: 20rem;
     border-radius: 30px;
-    padding: 0rem 5rem;
-    box-shadow: 0 20px 20px  rgba(232,8,205,0.58),
-                0px 0px 50px rgba(155,41,216,0.76);
+    margin: 65px;
+    height: 70vh;
+    padding: 1rem 3rem;
+    box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
+      0px 0px 50px rgba(155, 41, 216, 0.76);
+  }
+
+  .card2 {
+    min-height: 90vh;
+    margin: 65px;
+    width: 20rem;
+    height: 90vh;
+    border-radius: 30px;
+    padding: 1rem 1rem;
+    box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
   }
   .barman-video {
     display: block;
@@ -244,37 +306,38 @@ body {
     top: 0;
     left: 0;
     margin: 5rem auto;
-    
-}
-  
+
+  }
+
 }
 
-.icy-cocktail{
+.icy-cocktail {
   min-height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .icy-cocktail img {
   width: 15rem;
   z-index: 20;
   transition: all 0.75s ease-out;
-  
+
 }
+
 .circle {
   width: 15rem;
   height: 15rem;
-  background: linear-gradient(
-    to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(8, 83, 156, 0.75)
-  );
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
   position: absolute;
   border-radius: 50%;
   z-index: -1;
   margin-top: 60px;
   margin-left: 20px;
 }
+
 .random-cocktail {
   font-family: "Rock Salt", sans-serif;
   color: #ee82ee;
@@ -290,12 +353,38 @@ body {
   display: block;
   position: absolute;
   bottom: 20px;
+  left:30%;
   height: 7%;
 }
-.title{
+
+.title,
+.ingredients {
   text-align: center;
   color: #eb04ef;
   display: block;
+  margin-top: 60px;
+}
+
+.ingredients-list {
+  list-style: none;
+  font-family: 'Railway', sans-serif;
+  text-align: justify;
+  display: block;
+  margin: 5px auto;
+  color: #ee82ee;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  letter-spacing: 2px;
+  }
+.ingredients-header {
+  text-align: center;
+    color: #ee82ee;
+    font-size: 29px;
+    border: none;
+    display: block;
+    padding: 10px 10px;
+    background-color: rgb(10, 12, 16);
 }
 /* Video styling */
 
@@ -303,7 +392,7 @@ body {
   display: block;
   width: 60%;
   max-height: calc(.5625 * 80vw);
-  top : 0;
+  top: 0;
   left: 0;
   margin: 5rem auto;
 }
@@ -315,18 +404,21 @@ hr:not([size]) {
   border-radius: 6px;
   /* https://cssgradient.io/ used for background gradient color*/
   background: rgb(10 12 16);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(110,9,121,1) 52%, rgba(0,212,255,1) 80%);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(110, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 80%);
 }
+
 /* Google maps styling */
 
 div #map {
   min-height: 500px;
-  max-width :85%;
-  margin: 5rem auto 15rem;;
+  max-width: 85%;
+  margin: 5rem auto 15rem;
+  ;
   border-radius: 23px;
   box-shadow: 14px -5px 20px 20px #6f359a94;
 }
-#neon-bg--image{
+
+#neon-bg--image {
   background: url(../images/neon-signs.jpg);
   position: relative;
   background-repeat: no-repeat;
@@ -336,36 +428,55 @@ div #map {
   background-position: center;
   background-attachment: fixed;
 }
+
 .festivals {
   color: #85e6f0;
   text-shadow: -20px -5px 20px #85e6f0;
   box-shadow: 1px 1px 18px 4px #85e6f0;
   letter-spacing: 0.269em;
-  font-family: 'Railway',sans-serif;
+  font-family: 'Railway', sans-serif;
   font-weight: 700;
   font-size: 2vh;
   border-style: none;
   border-radius: 50px;
   width: 70%;
   min-height: 90px;
-  margin:90px auto;
+  margin: 90px auto;
   display: block;
-  background:rgb( 16,10,12);
+  background: rgb(16, 10, 12);
 }
+
 .rooftop {
   color: #ee82ee;
   text-transform: capitalize;
   text-shadow: -20px -5px 20px #ee82ee;
   box-shadow: 1px 1px 18px 4px#ee82ee;
   letter-spacing: 0.269em;
-  font-family: 'Railway',sans-serif;
+  font-family: 'Railway', sans-serif;
   font-size: 2vh;
   font-weight: 700;
   border-style: none;
   border-radius: 50px;
   width: 70%;
   min-height: 90px;
-  margin:90px auto;
+  margin: 90px auto;
   display: block;
-  background:rgb( 16,10,12);
+  background: rgb(16, 10, 12);
 }
+
+/* Contact form section  */
+.contact-form {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #921740;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
