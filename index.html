@@ -37,7 +37,7 @@
             <a class="nav-link home-link--text active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link contact-link--text" href="#"><i class="far fa-envelope"></i> Contact</a>
+            <a class="nav-link contact-link--text" href="#form"><i class="far fa-envelope"></i> Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link coctail-link--text" href="#cocktail"><i class="fas fa-cocktail"></i> Coctails</a>
@@ -59,7 +59,8 @@
     <div class="hero-container"></div>
     <h1 id="header-text">London Libre</h1>
     <p class="hero-text">Cocktails|Bar Hire|Events|Every Ocassion</p>
-    <button class="quote-btn" type="submit" value="text">Get a Quote!</button>
+    <!-- <button class="quote-btn" type="submit" href="#form" value="text">Get a Quote!</button> -->
+    <a class="quote-btn" href="#form">Get a Quote!</a>
   </section>
   <!-- END of Hero image section  -->
 
@@ -161,17 +162,17 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-sm-12 offset-lg-3">
-          <form>
+          <form id="form">
             <div>
-            <label for="email" >Please enter valid email </label>
+            <label for="email" class="label-text">Please enter valid email:</label>
             <input type="email" id="email" class="contact-form contact-link--text" placeholder="example@email.com" required> 
           </div>
           <div>
-            <label for="name">Please enter your name </label>
+            <label for="name" class="label-text">Please enter your name:</label>
             <input type="text" id="name" class="contact-form coctail-link--text" placeholder="Your name" required> 
           </div>
           <div>
-            <label for="message">Your Message:</label>
+            <label for="message" class="label-text">Your Message:</label>
             <textarea  id="message" class="contact-form home-link--text" placeholder="Your message"></textarea>
           </div>
             <button type="submit" class="rooftop">Send!</button>
