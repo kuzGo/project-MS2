@@ -189,21 +189,24 @@
         <p class="about-header">Consider hiring a trusted professional??</p>
         <div class="col-md-6 col-sm-12 offset-lg-3">
           <form id="form">
-            <div>
-              <label for="email" class="label-text">Please enter valid email:</label>
-              <input type="email" id="email" class="contact-form contact-link--text" placeholder="example@email.com"
-                required />
-            </div>
+
             <div>
               <label for="name" class="label-text">Please enter your name:</label>
-              <input type="text" id="name" class="contact-form coctail-link--text" placeholder="Your name" required />
+              <input type="text" id="name" name="from_name" class="contact-form coctail-link--text" placeholder="Your name" required />
             </div>
+
+            <div>
+              <label for="email" class="label-text">Please enter valid email:</label>
+              <input type="email" id="email" name="from_email" class="contact-form contact-link--text" placeholder="example@email.com"
+                required />
+            </div>
+            
             <div>
               <label for="message" class="label-text">Your Message:</label>
-              <textarea rows="5" id="message" class="contact-form home-link--text"
+              <textarea rows="5" id="message" name="message" class="contact-form home-link--text"
                 placeholder="Your message"></textarea>
             </div>
-            <button type="submit" class="rooftop">Send!</button>
+            <button id="submitBtn" type="submit" class="rooftop">Send!</button>
           </form>
         </div>
       </div>
