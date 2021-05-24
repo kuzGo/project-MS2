@@ -1,8 +1,13 @@
 body {
   font-family: "Rock Salt", cursive;
   min-height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-perspective: 2000px;
   perspective: 2000px;
   padding: 0;
   margin: 0;
@@ -11,10 +16,14 @@ body {
 
 /*--------------------Navigation bar---------------- */
 .nav {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .navbar-collapse {
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
 }
 
@@ -22,10 +31,13 @@ body {
   border-radius: 50%;
   border-style: solid;
   padding: 3px;
+  -webkit-box-shadow: 0px 0px 20px 9px;
   box-shadow: 0px 0px 20px 9px;
 }
 
 .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   margin: 8px;
   display: flex;
 }
@@ -44,6 +56,7 @@ body {
   color: #ee82ee;
   text-transform: capitalize;
   text-shadow: -20px -5px 20px #ee82ee;
+  -webkit-box-shadow: 1px 1px 18px 4px#ee82ee;
   box-shadow: 1px 1px 18px 4px#ee82ee;
   line-height: 22px;
   letter-spacing: 0.269em;
@@ -61,6 +74,7 @@ body {
   color: #85e6f0;
   text-transform: capitalize;
   text-shadow: -20px -5px 20px #85e6f0;
+  -webkit-box-shadow: 1px 1px 18px 4px #85e6f0;
   box-shadow: 1px 1px 18px 4px #85e6f0;
   line-height: 22px;
   letter-spacing: 0.269em;
@@ -77,6 +91,7 @@ body {
   color: #7690fc;
   text-transform: capitalize;
   text-shadow: -20px -5px 20px #7690fc;
+  -webkit-box-shadow: 1px 1px 18px 4px #7690fc;
   box-shadow: 1px 1px 18px 4px #7690fc;
   line-height: 22px;
   letter-spacing: 0.269em;
@@ -130,6 +145,8 @@ body {
   left: 50%;
   color: #1dea7d;
   letter-spacing: 2px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -142,6 +159,8 @@ body {
   color: #edf109;
   letter-spacing: 6px;
   font-weight: 600;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -156,9 +175,12 @@ body {
   border-radius: 23px;
   border: none;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #000;
   background-color: #eb04ef;
+  -webkit-box-shadow: -2px 2px 20px 4px #eb04ef;
   box-shadow: -2px 2px 20px 4px #eb04ef;
 }
 
@@ -186,7 +208,9 @@ body {
   }
 
   .nav {
+    display: -ms-grid;
     display: grid;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
@@ -194,11 +218,14 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #0a0c10ed;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
- .med-screen{
-   display: block;
- }
+
+  .med-screen {
+    display: block;
+  }
 
 }
 
@@ -207,6 +234,8 @@ body {
   color: #ee82ee;
   padding: 50px 50px;
   margin-bottom: 85px;
+  -webkit-transition: all ease-out 2s;
+  -o-transition: all ease-out 2s;
   transition: all ease-out 2s;
   opacity: 0;
 }
@@ -216,6 +245,8 @@ body {
   color: #ee82ee;
   padding: 50px 50px;
   margin-bottom: 85px;
+  -webkit-transition: all ease-in-out 5s;
+  -o-transition: all ease-in-out 5s;
   transition: all ease-in-out 5s;
   opacity: 1;
 }
@@ -247,19 +278,27 @@ body {
 /* Cards styling */
 
 .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: rgb(10 12 16);
 }
 
 .card1 {
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   min-height: 90vh;
   margin: 65px auto;
   width: 30rem;
   border-radius: 30px;
   padding: 0rem 5rem;
+  -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
   box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
 }
 
@@ -270,12 +309,14 @@ body {
   height: 90vh;
   border-radius: 30px;
   padding: 1rem 1rem;
+  -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
   box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
 }
 
 /* Bootstrap's breakpoint https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
 @media screen and (max-width: 767.98px) {
-  /* .card1 {
+  .card1 {
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     width: 20rem;
     border-radius: 30px;
@@ -283,11 +324,13 @@ body {
     height: 70vh;
     padding: 1rem 3rem;
     left: 13%;
+    -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
+      0px 0px 50px rgba(155, 41, 216, 0.76);
     box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
       0px 0px 50px rgba(155, 41, 216, 0.76);
-  } */
+  }
 
-  /* .card2 {
+  .card2 {
     min-height: 90vh;
     margin: 65px;
     width: 20rem;
@@ -295,8 +338,9 @@ body {
     border-radius: 30px;
     padding: 1rem 1rem;
     overflow-y: scroll;
+    -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
     box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
-  } */
+  }
 
   .barman-video {
     display: block;
@@ -307,14 +351,16 @@ body {
     margin: 5rem auto;
 
   }
-  
+
 }
+
 @media (max-width: 991.98px) {
   .random-cocktail {
     font-family: "Rock Salt", sans-serif;
     color: #ee82ee;
     text-transform: capitalize;
     text-shadow: -20px -5px 20px #ee82ee;
+    -webkit-box-shadow: 1px 1px 18px 4px#ee82ee;
     box-shadow: 1px 1px 18px 4px#ee82ee;
     line-height: 22px;
     letter-spacing: 0.269em;
@@ -325,7 +371,7 @@ body {
     display: block;
     left: 30%;
     position: absolute;
-    left:auto;
+    left: auto;
     bottom: 20px;
     height: 7%;
   }
@@ -333,14 +379,22 @@ body {
 
 .icy-cocktail {
   min-height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .icy-cocktail img {
   width: 15rem;
   z-index: 20;
+  -webkit-transition: all 0.75s ease-out;
+  -o-transition: all 0.75s ease-out;
   transition: all 0.75s ease-out;
 
 }
@@ -348,6 +402,13 @@ body {
 .circle {
   width: 15rem;
   height: 15rem;
+  background: -webkit-gradient(linear,
+      left top, right top,
+      from(rgba(245, 70, 66, 0.75)),
+      to(rgba(8, 83, 156, 0.75)));
+  background: -o-linear-gradient(left,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
   background: linear-gradient(to right,
       rgba(245, 70, 66, 0.75),
       rgba(8, 83, 156, 0.75));
@@ -363,6 +424,7 @@ body {
   color: #ee82ee;
   text-transform: capitalize;
   text-shadow: -20px -5px 20px #ee82ee;
+  -webkit-box-shadow: 1px 1px 18px 4px#ee82ee;
   box-shadow: 1px 1px 18px 4px#ee82ee;
   line-height: 22px;
   letter-spacing: 0.269em;
@@ -373,7 +435,7 @@ body {
   display: block;
   position: absolute;
   bottom: 20px;
-  left:auto;
+  left: auto;
   height: 7%;
 }
 
@@ -424,8 +486,10 @@ hr:not([size]) {
   max-width: 90%;
   margin-left: 55px;
   border-radius: 6px;
-  /* https://cssgradient.io/ used for background gradient color*/
   background: rgb(10 12 16);
+  /* https://cssgradient.io/ used for background gradient color*/
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(2, 0, 36, 1)), color-stop(52%, rgba(110, 9, 121, 1)), color-stop(80%, rgba(0, 212, 255, 1)));
+  background: -o-linear-gradient(left, rgba(2, 0, 36, 1) 8%, rgba(110, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 80%);
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(110, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 80%);
 }
 
@@ -437,6 +501,7 @@ div #map {
   margin: 5rem auto 15rem;
   ;
   border-radius: 23px;
+  -webkit-box-shadow: 14px -5px 20px 20px #6f359a94;
   box-shadow: 14px -5px 20px 20px #6f359a94;
 }
 
@@ -454,6 +519,7 @@ div #map {
 .festivals {
   color: #85e6f0;
   text-shadow: -20px -5px 20px #85e6f0;
+  -webkit-box-shadow: 1px 1px 18px 4px #85e6f0;
   box-shadow: 1px 1px 18px 4px #85e6f0;
   letter-spacing: 0.269em;
   font-family: 'Railway', sans-serif;
@@ -472,6 +538,7 @@ div #map {
   color: #ee82ee;
   text-transform: capitalize;
   text-shadow: -20px -5px 20px #ee82ee;
+  -webkit-box-shadow: 1px 1px 18px 4px#ee82ee;
   box-shadow: 1px 1px 18px 4px#ee82ee;
   letter-spacing: 0.269em;
   font-family: 'Railway', sans-serif;
@@ -494,11 +561,13 @@ div #map {
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #921740;
+  color: #28030f;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+  -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
@@ -508,14 +577,40 @@ div #map {
   margin: 22px;
   font-family: 'Railway', sans-serif;
 }
+
 /* this code changes plackeholder background color */
-.contact-form::placeholder,
-.contact-form::-webkit-textfield-decoration-container {
+.contact-form::-webkit-input-placeholder {
+  background: -webkit-gradient(linear,
+      left top, right top,
+      from(rgba(245, 70, 66, 0.75)),
+      to(rgba(8, 83, 156, 0.75)));
   background: linear-gradient(to right,
       rgba(245, 70, 66, 0.75),
       rgba(8, 83, 156, 0.75));
 }
+
+.contact-form::placeholder,
+.contact-form::-webkit-textfield-decoration-container {
+  background: -webkit-gradient(linear,
+      left top, right top,
+      from(rgba(245, 70, 66, 0.75)),
+      to(rgba(8, 83, 156, 0.75)));
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
+}
+
 /* This will set custom textarea height to 10rem */
 #message {
-  height:10rem;
+  height: 10rem;
+}
+
+
+/* Footer section */
+
+.media-links {
+  text-decoration: none;
+  display: inline-block;
+  color: #039eda;
+
 }
