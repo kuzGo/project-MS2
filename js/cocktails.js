@@ -35,14 +35,14 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/random.php')
         
         if(cocktail[`strIngredient${i}`]) {   
 
-          ingridients.push(`${cocktail[`strIngredient${i}`]}`) 
+          ingridients.push(`${cocktail[`strMeasure${i}`]}:${cocktail[`strIngredient${i}`]}`) 
 
         } else {
 
           break;
 
         }
-
+        
         let displayIngrediens = `
         <ul>${ingridients.map(ingredient =>`<li class="ingredients-list">${ingredient}</li>`).join('')}</ul>
         <h3 class="ingredients-header">How To:</h3>
