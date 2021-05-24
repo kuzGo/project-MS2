@@ -33,7 +33,7 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/random.php')
 
        for (let i = 1; i < 16; i++) {
         
-        if(cocktail[`strIngredient${i}`]) {   
+        if(cocktail[`strIngredient${i}`] && cocktail[`strMeasure${i}`] ) {   
 
           ingridients.push(`${cocktail[`strMeasure${i}`]}:${cocktail[`strIngredient${i}`]}`) 
 
@@ -42,7 +42,7 @@ fetch ('https://www.thecocktaildb.com/api/json/v1/1/random.php')
           break;
 
         }
-        
+        console.log(ingridients);
         let displayIngrediens = `
         <ul>${ingridients.map(ingredient =>`<li class="ingredients-list">${ingredient}</li>`).join('')}</ul>
         <h3 class="ingredients-header">How To:</h3>
