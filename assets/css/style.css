@@ -105,12 +105,14 @@ body {
   position: absolute;
   bottom: 0;
   fill: rgb(29, 30, 33);
+  height: auto;
 }
 
 .map-wave {
   position: absolute;
   bottom: 0;
   fill: #0a0c10;
+  height: auto;
 }
 
 .hero-container {
@@ -147,6 +149,7 @@ body {
   position: absolute;
   text-align: center;
   text-decoration: none;
+  line-height: 261%;
   top: 70%;
   height: 46px;
   width: 15rem;
@@ -193,7 +196,9 @@ body {
     background-color: #0a0c10ed;
     justify-content: center;
   }
-
+ .med-screen{
+   display: block;
+ }
 
 }
 
@@ -251,8 +256,8 @@ body {
 .card1 {
   transform-style: preserve-3d;
   min-height: 90vh;
-  margin-top: 65px;
-  width: 35rem;
+  margin: 65px auto;
+  width: 30rem;
   border-radius: 30px;
   padding: 0rem 5rem;
   box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
@@ -260,18 +265,17 @@ body {
 
 .card2 {
   min-height: 90vh;
-  margin: 65px;
-  width: 35rem;
+  margin: 65px auto;
+  width: 30rem;
   height: 90vh;
   border-radius: 30px;
   padding: 1rem 1rem;
-  /* overflow-y: scroll; */
   box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
 }
 
 /* Bootstrap's breakpoint https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
 @media screen and (max-width: 767.98px) {
-  .card1 {
+  /* .card1 {
     transform-style: preserve-3d;
     width: 20rem;
     border-radius: 30px;
@@ -281,9 +285,9 @@ body {
     left: 13%;
     box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
       0px 0px 50px rgba(155, 41, 216, 0.76);
-  }
+  } */
 
-  .card2 {
+  /* .card2 {
     min-height: 90vh;
     margin: 65px;
     width: 20rem;
@@ -292,7 +296,7 @@ body {
     padding: 1rem 1rem;
     overflow-y: scroll;
     box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
-  }
+  } */
 
   .barman-video {
     display: block;
@@ -303,7 +307,9 @@ body {
     margin: 5rem auto;
 
   }
-
+  
+}
+@media (max-width: 991.98px) {
   .random-cocktail {
     font-family: "Rock Salt", sans-serif;
     color: #ee82ee;
@@ -317,7 +323,9 @@ body {
     border-radius: 23px;
     background-color: transparent;
     display: block;
+    left: 30%;
     position: absolute;
+    left:auto;
     bottom: 20px;
     height: 7%;
   }
@@ -365,7 +373,7 @@ body {
   display: block;
   position: absolute;
   bottom: 20px;
-  left: 30%;
+  left:auto;
   height: 7%;
 }
 
@@ -500,9 +508,14 @@ div #map {
   margin: 22px;
   font-family: 'Railway', sans-serif;
 }
+/* this code changes plackeholder background color */
 .contact-form::placeholder,
-.contact-form::-webkit-textfield-decoration-container{
+.contact-form::-webkit-textfield-decoration-container {
   background: linear-gradient(to right,
       rgba(245, 70, 66, 0.75),
       rgba(8, 83, 156, 0.75));
+}
+/* This will set custom textarea height to 10rem */
+#message {
+  height:10rem;
 }
