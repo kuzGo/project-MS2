@@ -38,7 +38,7 @@ body {
 .nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
-  margin: 8px;
+  margin: 18px;
   display: flex;
 }
 
@@ -196,11 +196,9 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-@media screen and (max-width:640px) {
-
+@media screen and (max-width: 640px) {
   .man-img {
     width: 15rem;
     height: 15rem;
@@ -226,7 +224,6 @@ body {
   .med-screen {
     display: block;
   }
-
 }
 
 .about-text {
@@ -298,8 +295,10 @@ body {
   width: 30rem;
   border-radius: 30px;
   padding: 0rem 5rem;
-  -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
-  box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
+  -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
+    0px 0px 50px rgba(155, 41, 216, 0.76);
+  box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
+    0px 0px 50px rgba(155, 41, 216, 0.76);
 }
 
 .card2 {
@@ -309,8 +308,10 @@ body {
   height: 90vh;
   border-radius: 30px;
   padding: 1rem 1rem;
-  -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
-  box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
+  -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
+    0px 0px 50px rgba(155, 41, 216, 0.76);
+  box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
+    0px 0px 50px rgba(155, 41, 216, 0.76);
 }
 
 /* Bootstrap's breakpoint https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
@@ -320,8 +321,8 @@ body {
     transform-style: preserve-3d;
     width: 20rem;
     border-radius: 30px;
-    margin: 65px;
-    height: 70vh;
+    margin: 65px 300px;
+    height: 90%;
     padding: 1rem 3rem;
     left: 13%;
     -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
@@ -332,26 +333,26 @@ body {
 
   .card2 {
     min-height: 90vh;
-    margin: 65px;
+    margin: 65px 300px;
     width: 20rem;
     height: 90vh;
     border-radius: 30px;
     padding: 1rem 1rem;
     overflow-y: scroll;
-    -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
-    box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58), 0px 0px 50px rgba(155, 41, 216, 0.76);
+    -webkit-box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
+      0px 0px 50px rgba(155, 41, 216, 0.76);
+    box-shadow: 0 20px 20px rgba(232, 8, 205, 0.58),
+      0px 0px 50px rgba(155, 41, 216, 0.76);
   }
 
   .barman-video {
     display: block;
     width: 80%;
-    max-height: calc(.5625 * 80vw);
+    max-height: calc(0.5625 * 80vw);
     top: 0;
     left: 0;
     margin: 5rem auto;
-
   }
-
 }
 
 @media (max-width: 991.98px) {
@@ -396,14 +397,14 @@ body {
   -webkit-transition: all 0.75s ease-out;
   -o-transition: all 0.75s ease-out;
   transition: all 0.75s ease-out;
-
 }
 
 .circle {
   width: 15rem;
   height: 15rem;
   background: -webkit-gradient(linear,
-      left top, right top,
+      left top,
+      right top,
       from(rgba(245, 70, 66, 0.75)),
       to(rgba(8, 83, 156, 0.75)));
   background: -o-linear-gradient(left,
@@ -445,15 +446,16 @@ body {
   color: #eb04ef;
   display: block;
   margin-top: 60px;
+  margin-bottom:35px;
 }
 
 .ingredients-list {
   list-style: none;
-  font-family: 'Railway', sans-serif;
+  font-family: "Railway", sans-serif;
   text-align: justify;
   display: block;
   margin: 5px auto;
-  color: #ee82ee;
+  color: #e12172;
   position: relative;
   top: 50%;
   bottom: 50%;
@@ -475,7 +477,7 @@ body {
 .barman video {
   display: block;
   width: 60%;
-  max-height: calc(.5625 * 80vw);
+  max-height: calc(0.5625 * 80vw);
   top: 0;
   left: 0;
   margin: 5rem auto;
@@ -488,9 +490,20 @@ hr:not([size]) {
   border-radius: 6px;
   background: rgb(10 12 16);
   /* https://cssgradient.io/ used for background gradient color*/
-  background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(2, 0, 36, 1)), color-stop(52%, rgba(110, 9, 121, 1)), color-stop(80%, rgba(0, 212, 255, 1)));
-  background: -o-linear-gradient(left, rgba(2, 0, 36, 1) 8%, rgba(110, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 80%);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(110, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 80%);
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      color-stop(8%, rgba(2, 0, 36, 1)),
+      color-stop(52%, rgba(110, 9, 121, 1)),
+      color-stop(80%, rgba(0, 212, 255, 1)));
+  background: -o-linear-gradient(left,
+      rgba(2, 0, 36, 1) 8%,
+      rgba(110, 9, 121, 1) 52%,
+      rgba(0, 212, 255, 1) 80%);
+  background: linear-gradient(90deg,
+      rgba(2, 0, 36, 1) 8%,
+      rgba(110, 9, 121, 1) 52%,
+      rgba(0, 212, 255, 1) 80%);
 }
 
 /* Google maps styling */
@@ -499,7 +512,6 @@ div #map {
   min-height: 500px;
   max-width: 85%;
   margin: 5rem auto 15rem;
-  ;
   border-radius: 23px;
   -webkit-box-shadow: 14px -5px 20px 20px #6f359a94;
   box-shadow: 14px -5px 20px 20px #6f359a94;
@@ -522,9 +534,9 @@ div #map {
   -webkit-box-shadow: 1px 1px 18px 4px #85e6f0;
   box-shadow: 1px 1px 18px 4px #85e6f0;
   letter-spacing: 0.269em;
-  font-family: 'Railway', sans-serif;
+  font-family: "Railway", sans-serif;
   font-weight: 700;
-  font-size: 2vh;
+  font-size: 1rem;;
   border-style: none;
   border-radius: 50px;
   width: 70%;
@@ -541,8 +553,8 @@ div #map {
   -webkit-box-shadow: 1px 1px 18px 4px#ee82ee;
   box-shadow: 1px 1px 18px 4px#ee82ee;
   letter-spacing: 0.269em;
-  font-family: 'Railway', sans-serif;
-  font-size: 2vh;
+  font-family: "Railway", sans-serif;
+  font-size: 1rem;;
   font-weight: 700;
   border-style: none;
   border-radius: 50px;
@@ -554,34 +566,48 @@ div #map {
 }
 
 /* Contact form section  */
+#heart-bg--image {
+  /* Photo used from the following : https://pixabay.com/illustrations/heart-neon-color-red-neon-sign-3464049/ */
+  background: url(../images/heart-lights.webp);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .contact-form {
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #28030f;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: .25rem;
-  -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .label-text {
   color: #cde600;
   font-size: 22px;
   margin: 22px;
-  font-family: 'Railway', sans-serif;
+  font-family: "Railway", sans-serif;
 }
 
 /* this code changes plackeholder background color */
 .contact-form::-webkit-input-placeholder {
   background: -webkit-gradient(linear,
-      left top, right top,
+      left top,
+      right top,
       from(rgba(245, 70, 66, 0.75)),
       to(rgba(8, 83, 156, 0.75)));
   background: linear-gradient(to right,
@@ -592,7 +618,8 @@ div #map {
 .contact-form::placeholder,
 .contact-form::-webkit-textfield-decoration-container {
   background: -webkit-gradient(linear,
-      left top, right top,
+      left top,
+      right top,
       from(rgba(245, 70, 66, 0.75)),
       to(rgba(8, 83, 156, 0.75)));
   background: linear-gradient(to right,
@@ -605,12 +632,21 @@ div #map {
   height: 10rem;
 }
 
-
 /* Footer section */
 
 .media-links {
   text-decoration: none;
   display: inline-block;
   color: #039eda;
-
+}
+.form-text{
+  text-align: center;
+  display: inline-block;
+  color: #ee82ee;
+  font-family: 'Railway',sans-serif;
+  font-size: 45px;
+  border: none;
+  padding: 50px 50px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
