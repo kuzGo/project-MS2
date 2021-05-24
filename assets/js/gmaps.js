@@ -75,7 +75,7 @@ function dropFestival() {
   let barMarkers = document.getElementById("drop-season");
   barMarkers.addEventListener("click", event => {
     
-      clearMarkers();
+      clearTimeout(dropFestival);
       dropBars();
   });
 
