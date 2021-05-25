@@ -16,6 +16,7 @@ cocktailName.addEventListener("click", (event) => {
       });
     })
     .catch(function (err) {
+      alert("Oooh sorry .. Something went wrong :("),
       console.log("Fetch Error", err);
     });
 });
