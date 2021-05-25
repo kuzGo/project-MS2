@@ -1,6 +1,4 @@
-// Declaring two variables to get a referennce to submit button and form in index.html
-
-let submitBtn = document.getElementById("submitBtn");
+// Declaring variable to get a referennce to form in index.html
 let form = document.getElementById("form");
 // Adding submit event to form button
 form.addEventListener("submit", function (event) {
@@ -15,9 +13,9 @@ form.addEventListener("submit", function (event) {
     alert("Email sent !!.Thank you for your email"),
       // Resets form inputs
       form.reset();
-    (error) => {
+    (err) => {
       //Notifies the user about any possible errors occured with submission
-      alert(JSON.stringify(erorr));
+      alert(JSON.stringify(err));
     };
   });
 });
