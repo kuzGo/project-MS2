@@ -19,6 +19,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  /* background-color: rgba(0, 0, 0, 0.9); */
 }
 
 .navbar-collapse {
@@ -172,6 +173,7 @@ body {
   top: 70%;
   height: 46px;
   width: 15rem;
+  margin-top: 37px;
   border-radius: 23px;
   border: none;
   left: 50%;
@@ -196,30 +198,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (max-width: 640px) {
-  .man-img {
-    width: 15rem;
-    height: 15rem;
-    margin-left: 45px;
-  }
-
-  .nav {
-    display: -ms-grid;
-    display: grid;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    height: 100vh;
-    width: 100vw;
-    background-color: #0a0c10ed;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
 }
 
 .about-text {
@@ -250,16 +228,18 @@ body {
   color: #ee82ee;
   font-size: 29px;
   border: none;
-  padding: 50px 50px;
+  padding: 50px 33px;
   margin: 0;
   background-color: rgb(10, 12, 16);
 }
 
 .info-text {
-  font-family: "Railway",sans-serif;
+  font-family: "Railway", sans-serif;
   text-align: center;
   color: #e12172;
-  font-size: 17px
+  font-size: 17px;
+  overflow-wrap: break-word;
+  padding: 0 66px;
 }
 
 .about-section {
@@ -270,10 +250,6 @@ body {
 
 .about-plus {
   margin-left: 5rem;
-}
-
-.about-plus ::after {
-  content: "-";
 }
 
 /* Cards styling */
@@ -288,6 +264,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 70px;
   background-color: rgb(10 12 16);
 }
 
@@ -295,7 +272,7 @@ body {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   min-height: 90vh;
-  margin: 65px auto;
+  margin: 107px auto;
   width: 30rem;
   border-radius: 30px;
   padding: 0rem 5rem;
@@ -307,7 +284,7 @@ body {
 
 .card2 {
   min-height: 90vh;
-  margin: 65px auto;
+  margin: 107px auto;
   width: 30rem;
   height: 90vh;
   border-radius: 30px;
@@ -318,8 +295,8 @@ body {
     0px 0px 50px rgba(155, 41, 216, 0.76);
 }
 
-/* Bootstrap's breakpoint https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
-@media screen and (max-width: 767.98px) {
+/* Smartphones portrait and landscape orientation  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 823px) {
   .card1 {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -349,36 +326,38 @@ body {
       0px 0px 50px rgba(155, 41, 216, 0.76);
   }
 
+  .random-cocktail {
+    left: 13% !important;
+  }
+
+  .man-img {
+    width: 15rem;
+    height: 15rem;
+  }
+
   .barman-video {
     display: block;
-    width: 80%;
+    width: 80% !important;
     max-height: calc(0.5625 * 80vw);
     top: 0;
     left: 0;
     margin: 5rem auto;
   }
-}
 
-@media (max-width: 991.98px) {
-  .random-cocktail {
-    font-family: "Rock Salt", sans-serif;
-    color: #ee82ee;
-    text-transform: capitalize;
-    text-shadow: -20px -5px 20px #ee82ee;
-    -webkit-box-shadow: 1px 1px 18px 4px#ee82ee;
-    box-shadow: 1px 1px 18px 4px#ee82ee;
-    line-height: 22px;
-    letter-spacing: 0.269em;
-    font-weight: 700;
-    border-style: none;
-    border-radius: 23px;
-    background-color: transparent;
-    display: block;
-    left: 30%;
-    position: absolute;
-    left: 25%;
-    bottom: 20px;
-    height: 7%;
+  .nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #0a0c10ed;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -406,17 +385,23 @@ body {
 .circle {
   width: 15rem;
   height: 15rem;
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(rgba(245, 70, 66, 0.75)),
-      to(rgba(8, 83, 156, 0.75)));
-  background: -o-linear-gradient(left,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
-  background: linear-gradient(to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(245, 70, 66, 0.75)),
+    to(rgba(8, 83, 156, 0.75))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
   position: absolute;
   border-radius: 50%;
   z-index: -1;
@@ -440,7 +425,7 @@ body {
   display: block;
   position: absolute;
   bottom: 20px;
-  left: auto;
+  left: 25%;
   height: 7%;
 }
 
@@ -494,20 +479,26 @@ hr:not([size]) {
   border-radius: 6px;
   background: rgb(10 12 16);
   /* https://cssgradient.io/ used for background gradient color*/
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      color-stop(8%, rgba(2, 0, 36, 1)),
-      color-stop(52%, rgba(110, 9, 121, 1)),
-      color-stop(80%, rgba(0, 212, 255, 1)));
-  background: -o-linear-gradient(left,
-      rgba(2, 0, 36, 1) 8%,
-      rgba(110, 9, 121, 1) 52%,
-      rgba(0, 212, 255, 1) 80%);
-  background: linear-gradient(90deg,
-      rgba(2, 0, 36, 1) 8%,
-      rgba(110, 9, 121, 1) 52%,
-      rgba(0, 212, 255, 1) 80%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(8%, rgba(2, 0, 36, 1)),
+    color-stop(52%, rgba(110, 9, 121, 1)),
+    color-stop(80%, rgba(0, 212, 255, 1))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(2, 0, 36, 1) 8%,
+    rgba(110, 9, 121, 1) 52%,
+    rgba(0, 212, 255, 1) 80%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 8%,
+    rgba(110, 9, 121, 1) 52%,
+    rgba(0, 212, 255, 1) 80%
+  );
 }
 
 /* Google maps styling */
@@ -624,39 +615,32 @@ div #map {
 }
 
 /* this code changes plackeholder background color */
-.contact-form::-webkit-input-placeholder,
 #email,
 #name {
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(rgba(245, 70, 66, 0.75)),
-      to(rgba(8, 83, 156, 0.75)));
-  background: linear-gradient(to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
-}
-
-.contact-form::placeholder,
-.contact-form::-webkit-textfield-decoration-container,
-#email,
-#name {
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(rgba(245, 70, 66, 0.75)),
-      to(rgba(8, 83, 156, 0.75)));
-  background: linear-gradient(to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
+  font-family: "Railway", sans-serif;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(245, 70, 66, 0.75)),
+    to(rgba(8, 83, 156, 0.75))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
 }
 
 /* This will set custom textarea height to 10rem */
 #message {
   height: 10rem;
-  background: linear-gradient(to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
+  font-family: "Railway", sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
 }
 
 /* Footer section */
@@ -664,7 +648,6 @@ div #map {
   text-decoration: none;
   display: inline-block;
   color: #039eda;
-
 }
 
 .media-links li a i {
@@ -685,7 +668,7 @@ div #map {
 
 .media-links li a i:hover {
   background-color: #e64900;
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .footer-section {
