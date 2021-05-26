@@ -43,10 +43,10 @@
             <a class="nav-link home-link--text active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link contact-link--text" href="#form"><i class="far fa-envelope"></i> Contact</a>
+            <a class="nav-link coctail-link--text" href="#cocktail"><i class="fas fa-cocktail"></i> Coctails</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link coctail-link--text" href="#cocktail"><i class="fas fa-cocktail"></i> Coctails</a>
+            <a class="nav-link contact-link--text" href="#form"><i class="far fa-envelope"></i> Contact</a>
           </li>
         </ul>
       </div>
@@ -73,24 +73,13 @@
     <div class="container-fluid">
       <div class="row">
         <h2 class="about-header">Who We Are?</h2>
-
         <div class="col-md-6 col-sm-12" tabindex="-1">
           <button class="about-header">
-            Find Out More<span class="about-plus">+</span>
+            Find Out More<span class="about-plus"><i class="fas fa-plus"></i></span>
           </button>
-
           <hr class="text-divide" />
-          <p class="about-text about-text1" tabindex="-1">
-            Here at London Libre we have a passion for cocktails and travel.
-            The founder has traveled the world with cruise ships making
-            cocktails and worked in some London's prestige hotels and
-            cocktail bars. Now, at London Libre bar we can offer a diversity
-            of cocktails and service that fits all the cultures and types of
-            events.We are specialised in weddings, corporate
-            events,private events, festivals and concerts.
-          </p>
+          <p class="about-text about-text1" tabindex="-1"></p>
         </div>
-
         <div class="col-md-6 col-sm-12">
           <img src="assets/images/darko.png" class="man-img" alt="Photo of a man" />
         </div>
@@ -115,10 +104,10 @@
 
   <!-- Google Maps section -->
   <section class="about-section" id="neon-bg--image">
-    <!-- SVG created using https://getwaves.io/ -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="map-wave" aria-label="Black curly banner" viewbox="0 0 1440 320">
-      <path fill-opacity="1"
-        d="M0,224L80,240C160,256,320,288,480,293.3C640,299,800,277,960,266.7C1120,256,1280,256,1360,256L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+    <!-- SVG crested using https://getwaves.io/ -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path fill="#0a0c10" fill-opacity="1"
+        d="M0,160L26.7,176C53.3,192,107,224,160,218.7C213.3,213,267,171,320,149.3C373.3,128,427,128,480,133.3C533.3,139,587,149,640,149.3C693.3,149,747,139,800,122.7C853.3,107,907,85,960,74.7C1013.3,64,1067,64,1120,58.7C1173.3,53,1227,43,1280,42.7C1333.3,43,1387,53,1413,58.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
       </path>
     </svg>
     <div class="container-fluid">
@@ -138,25 +127,35 @@
         </div>
       </div>
     </div>
+    <!-- SVG created using https://getwaves.io/ -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="map-wave" aria-label="Black curly banner" viewbox="0 0 1440 320">
+      <path fill-opacity="1"
+        d="M0,224L80,240C160,256,320,288,480,293.3C640,299,800,277,960,266.7C1120,256,1280,256,1360,256L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+      </path>
+    </svg>
   </section>
 
   <div class="col-md-12 col-sm-12 about-section">
     <div class="row">
-      <h2 class="about-header">Or try it yourself :</h2>
+      <h2 class="about-header">Or try it yourself:</h2>
+      <p class="info-text">
+        Click Random Mixology button bellow to try some of our recipes
+
+        <i class="fas fa-angle-double-down "></i></p>
     </div>
   </div>
 
   <!-- Cards section  -->
   <section class="about-section" id="cocktail">
     <div class="card-container">
-      <div class="row med-screen">
+      <div class="row">
         <div class="col-md-12 col-sm-12 col-lg-6">
           <div class="card1">
             <div class="icy-cocktail">
               <div class="circle"></div>
               <!-- Photo used from :https://www.pexels.com/photo/glasses-of-fresh-icy-cocktails-on-marble-table-6542713/ .
                Image background removed using :https://pixlr.com/remove-background/ -->
-              <img src="assets/images/cocktail.png" alt="Coctail glass" />
+              <img src="assets/images/cocktail.png" alt="Cocktail glass" />
             </div>
             <div class="info">
               <h2 class="title">Cocktails</h2>
@@ -182,11 +181,16 @@
 
   <!-- Contact form section  -->
   <section class="about-section" id="heart-bg--image">
-
+    <!-- SVG crested using https://getwaves.io/ -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path fill="#0a0c10" fill-opacity="1"
+        d="M0,160L26.7,176C53.3,192,107,224,160,218.7C213.3,213,267,171,320,149.3C373.3,128,427,128,480,133.3C533.3,139,587,149,640,149.3C693.3,149,747,139,800,122.7C853.3,107,907,85,960,74.7C1013.3,64,1067,64,1120,58.7C1173.3,53,1227,43,1280,42.7C1333.3,43,1387,53,1413,58.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+      </path>
+    </svg>
     <div class="container-fluid">
       <div class="row">
-        <h2 class="about-header">How did that go??</h2>
-        <p class="form-text">Consider hiring a trusted professional??</p>
+        <h2 class="form-text">How did that go?</h2>
+        <p class="form-text">Consider hiring a trusted professional?</p>
         <div class="col-md-12 col-sm-12 col-lg-6 offset-lg-3">
           <form id="form">
             <div>
@@ -194,22 +198,19 @@
               <input type="text" id="name" name="from_name" class="contact-form coctail-link--text"
                 placeholder="Your name" required />
             </div>
-
             <div>
               <label for="email" class="label-text">Please enter valid email:</label>
               <input type="email" id="email" name="from_email" class="contact-form contact-link--text"
                 placeholder="example@email.com" required />
             </div>
-
             <div>
               <label for="message" class="label-text">Your Message:</label>
-              <textarea rows="5" id="message" name="message" class="contact-form home-link--text"
+              <textarea id="message" name="message" class="contact-form home-link--text"
                 placeholder="Your message"></textarea>
             </div>
             <button id="submitBtn" type="submit" class="rooftop">
               Send!
             </button>
-
           </form>
         </div>
       </div>
@@ -238,8 +239,8 @@
                   target="_blank"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="media-links">
-                <a href="https://www.linkedin.com/in/darko-doban-95822971/" aria-label="Follow us on Linkedin" rel="noopener" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/darko-doban-95822971/" aria-label="Follow us on Linkedin"
+                  rel="noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
               </li>
               <li class="media-links">
                 <a href="https://www.twitter.com" aria-label="Follow us on Twitted" rel="noopener" target="_blank"></a>
@@ -247,6 +248,9 @@
             </ul>
           </div>
         </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <h4>Wesite created by</h4>
       </div>
     </footer>
   </section>
