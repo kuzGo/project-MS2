@@ -198,6 +198,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 233% 155% 120%;
+  box-shadow: inset 0px 9px 5pc 0px #00ffdc;
 }
 
 .about-text {
@@ -226,8 +228,22 @@ body {
   text-align: center;
   display: inline-block;
   color: #ee82ee;
-  font-size: 29px;
+  font-size: 52px;
+  font-weight: 900;
   border: none;
+  letter-spacing: 5px;
+  padding: 50px 33px;
+  margin: 0;
+  background-color: rgb(10, 12, 16);
+}
+.about-us-header{
+  text-align: center;
+  display: inline-block;
+  color: #00ffdc;
+  font-size: 37px;
+  font-weight: 900;
+  border: none;
+  letter-spacing: 5px;
   padding: 50px 33px;
   margin: 0;
   background-color: rgb(10, 12, 16);
@@ -333,6 +349,8 @@ body {
   .man-img {
     width: 15rem;
     height: 15rem;
+    border-radius: 233% 155% 120%;
+    box-shadow: inset 0px 9px 5pc 0px #00ffdc;
   }
 
   .barman-video {
@@ -342,6 +360,7 @@ body {
     top: 0;
     left: 0;
     margin: 5rem auto;
+  
   }
 
   .nav {
@@ -470,6 +489,7 @@ body {
   top: 0;
   left: 0;
   margin: 5rem auto;
+ 
 }
 
 hr:not([size]) {
@@ -669,6 +689,7 @@ div #map {
 .media-links li a i:hover {
   background-color: #e64900;
   transform: scale(1.1);
+  
 }
 
 .footer-section {
@@ -676,4 +697,14 @@ div #map {
   position: relative;
   overflow: hidden;
   text-align: center;
+}
+.fa-angle-double-down {
+  font-size: 36px;
+  color: #e12172;
+  animation: pulse 1600ms infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: translateY(-15px);
+  }
 }
