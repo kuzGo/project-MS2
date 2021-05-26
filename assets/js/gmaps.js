@@ -1,3 +1,4 @@
+// Coordinates and infowindow details which will be displayed to the user
 const festivals = [
   {
     position: { lat: 51.5941, lng: -0.1298 },
@@ -63,6 +64,7 @@ const festivals = [
     },
   },
 ];
+// Coordinates and infowindow details which will be displayed to the user
 const bars = [
   {
     position: { lat: 51.5121, lng: -0.1186 },
@@ -72,7 +74,7 @@ const bars = [
     },
   },
 ];
-
+// Declaring variables
 let markers = [];
 let map;
 let infowindow;
@@ -87,16 +89,16 @@ function initMap() {
     content: "",
   });
 }
+// This function clears markers and adds new markers with infowindow when called
 function dropFestival() {
   clearMarkers();
-
   for (let i = 0; i < festivals.length; i++) {
-    addMarker(festivals[i].position, i * 500, festivals[i].content.html);
+    addMarker(festivals[i].position, i * 100, festivals[i].content.html);
   }
 }
+// This function clears marker and adds new markers with infowindow when called
 function dropBars() {
   clearMarkers();
-
   for (let j = 0; j < bars.length; j++) {
     addMarker(bars[j].position, j * 500, bars[j].content.html);
   }
@@ -118,19 +120,19 @@ function addMarker(position, timeout, content) {
     markers.push(marker);
   }, timeout);
 }
+// When invoked this function clears any markers from the map
 function clearMarkers() {
   for (let i = 0; i < markers.length; i++) {
     markers[i].setMap(null);
   }
   markers = [];
 }
-
+// This code invokes function which drops markers when button "Off Season"is clicked
 let barMarkers = document.getElementById("drop-season");
 barMarkers.addEventListener("click", (event) => {
-  clearTimeout(dropFestival);
   dropBars();
 });
-
+// This code invokes function which drops markers when button "Music Festivals"is clicked
 let festivalMarkers = document.getElementById("drop");
 festivalMarkers.addEventListener("click", (event) => {
   dropFestival();
