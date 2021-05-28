@@ -27,8 +27,9 @@ body {
 
 .loader-text {
   position: absolute;
-  top: 19%;
-  font-family:"Railway",sans-serif;
+  margin-top: 250px;
+  top:15%;
+  font-family: "Railway", sans-serif;
   z-index: 1200;
   text-align: center;
   bottom: 50%;
@@ -45,11 +46,10 @@ body {
   background-color: rgb(20, 67, 220);
   text-decoration: none;
   line-height: 261%;
-  top: 7%;
   height: 46px;
   width: 15rem;
   z-index: 1200;
-  margin-top: 37px;
+  margin-top: 473px;
   border-radius: 23px;
   border: none;
   left: 50%;
@@ -64,11 +64,10 @@ body {
   background-color: crimson;
   text-decoration: none;
   line-height: 261%;
-  top: 8%;
   z-index: 1200;
   height: 46px;
   width: 15rem;
-  margin-top: 37px;
+  margin-top: 556px;
   border-radius: 23px;
   border: none;
   left: 50%;
@@ -203,7 +202,7 @@ body {
 
 #header-text {
   position: absolute;
-  top: 42%;
+  top: 30%;
   text-align: center;
   bottom: 50%;
   left: 50%;
@@ -217,7 +216,7 @@ body {
 .hero-text {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 40%;
   bottom: 50%;
   left: 50%;
   color: #edf109;
@@ -233,7 +232,7 @@ body {
   text-align: center;
   text-decoration: none;
   line-height: 261%;
-  top: 70%;
+  top: 58%;
   height: 46px;
   width: 15rem;
   margin-top: 37px;
