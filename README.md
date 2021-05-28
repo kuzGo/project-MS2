@@ -1,45 +1,96 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# London Libre
 
-Welcome kuzGo,
+<p><img src="assets/docs/amiresponsive.png" style="min-width:100%" height="500" alt="Photo of website on devices"></p>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+* Link to live website : [London Libre](https://kuzgo.github.io/project-MS2/)
+***
 
-## Gitpod Reminders
+London Libre is a small business based in London. The business owner is an experienced and awarded barman , with years of experience working and travelling around the world on cruise ships,collecting  recipes from various different parts of the globe  . The business is aiming towards hiring a cocktail bar, and/or a bartender for any occasions such as weddings, corporate events etc. The business owner is also attending most of the major music festivals and offering customers an opportunity to taste the best in business cocktails in his pop-up bar. With this idea in mind, inspired with a mixture of colors,liquids, fun and neon lights as a symbol of cocktail bars as well as nights out, London Libre website design came into place. Dominant dark color has a goal to trigger a feeling of the nights out to potential users,also to define simplicity and elegance. Along with bright color combinations throughout the website the aim is to put users into a positive mood and possibly make a decision to hire a bartender. In the meantime when there are no festivals happening, the owner is brushing up his cocktail making skills in one of London's prestigious venues.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## UX
 
-A blue button should appear to click: *Make Public*,
+### User Stories
 
-Another blue button should appear to click: *Open Browser*.
+* User 1 : As a user I want to find the location where I can try cocktails
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* User 2 : As a user I want to ensure some of my favorite cocktails can be made before hiring 
 
-A blue button should appear to click: *Make Public*,
+* User 3 : As a user I want to be able to contact service provider and get a quote
 
-Another blue button should appear to click: *Open Browser*.
+* User 4 : As a user I want to be able to connect with the bussines owner on social media
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* User 5 :
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* User 6 :
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Existing features
+* Age confirmation popup 
+    * Prior to landing on the homepage of the website, users are asked to confirm that their age group is in line with the law before  visiting a website whose business is making and selling alcoholic beverages.
+* Navigation Bar Menu
+    * Navigation bar menu is positioned on the top of the website for the user's easy navigation through the different sections of the website. The navigation bar is designed with the company logo  and three other buttons,Home, Cocktails and Contact button.
+* Home
+    * Home is a part of the navigation bar, it is used to bring the user to the landing/home page when clicked. Home button contains a house icon associating the user that if this option is clicked it will return them home.
+* Cocktails
+    * Cocktail is a part of the navigation bar, when clicked it will bring the user to the section of the page where they can check some of the cocktail recipes and how to make them .
+* Contact 
+    * Contact is a part of the navigation bar and will bring the user to the section of the page where they will be able to contact the business owner with any questions they might have.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
+## Features Left to Implement
 
-Happy coding!
+
+
+## Technologies Used
+* [__HTML/HTML5__](https://developer.mozilla.org/en-US/docs/Web/HTML) used for a basic structure of the page and content.
+* [__CSS/CSS3__](https://developer.mozilla.org/en-US/docs/Web/CSS) used to add style to the page and its content.
+* [__JavaScript__](https://developer.mozilla.org/en-US/docs/Web/JavaScript) used to add interactivity to the page and using third party services.
+
+## Other Technologies used:
+* [__Bootstrap 5__](https://getboostrap.com) used as a framework to increase page responsivness .
+* [__Google Maps API__](https://developers.google.com/maps) used for displaying maps.
+* [__The CocktailDB API__](https://www.thecocktaildb.com/api.php) used as a free source for cocktail receipes.
+* [__EmailJS__](https://www.emailjs.com/) used to connect users with the owner via the contact form.
+* [__Get Waves__](https://getwaves.io/) used to generate SVG banners.
+* [__Balsamiq__](https://balsamiq.com) used for creating a wireframe.
+* [__Online Convert__](https://image.online-convert.com) used to convert photos to webp format.
+* [__Google Fonts__](https://fonts.google.com) used for project fonts.
+* [__Gitpod__](https://gitpod.io) used as a development environment.
+* [__Canva__](https://www.canva.com) used for logo creating.
+* [__Fontawesome__](https://fontawesome.com) used for adding icons.
+* [__Youtube__](https://www.youtube.com/) used as a general source of information.
+* [__W3Scool__](https://www.w3schools.com/) used as a general source of information.
+* [__Pexel__](https://www.pexels.com/) used to download the website's images.
+* [__Pixabay__](https://pixabay.com/) used to download the website's images.
+* [__Stackoverflow__](https://stackoverflow.com/) used as a general source of information.
+* [__W3C Markup Validator__](https://validator.w3.org/) Used to test HTML code validation.
+* [__W3C CSS Validatior - Jigsaw__](https://jigsaw.w3.org/css-validator/) Used to test CSS code validation.
+* [__JSHint__](https://jshint.com/) Used to test JavaScript code validation.
+* [__Am I Responsive__](http://ami.responsivedesign.is/) used during post deployment testing stage.
+* [__Pixlr__](https://pixlr.com) used to remove background and editing photographs.
+* [__Afinity__](https://affinity.serif.com/en-gb/photo/ ) used to remove background and editing photographs.
+
+
+
+
+## Project Wireframe Link :
+
+
+## Testing :
+
+
+## Deployment
+
+
+## Credits :
+
+
+
+
+## Acknowledgements
