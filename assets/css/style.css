@@ -14,6 +14,69 @@ body {
   scroll-behavior: smooth;
 }
 
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1200;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.97);
+  overflow-y: auto;
+}
+
+.loader-text {
+  position: absolute;
+  top: 19%;
+  font-family:"Railway",sans-serif;
+  z-index: 1200;
+  text-align: center;
+  bottom: 50%;
+  left: 50%;
+  color: #e71dea;
+  letter-spacing: 2px;
+  transform: translate(-50%, -50%);
+}
+
+
+.yes-btn {
+  position: absolute;
+  text-align: center;
+  background-color: rgb(20, 67, 220);
+  text-decoration: none;
+  line-height: 261%;
+  top: 7%;
+  height: 46px;
+  width: 15rem;
+  z-index: 1200;
+  margin-top: 37px;
+  border-radius: 23px;
+  border: none;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.no-btn {
+  position: absolute;
+  text-align: center;
+  background-color: crimson;
+  text-decoration: none;
+  line-height: 261%;
+  top: 8%;
+  z-index: 1200;
+  height: 46px;
+  width: 15rem;
+  margin-top: 37px;
+  border-radius: 23px;
+  border: none;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 /*--------------------Navigation bar---------------- */
 .nav {
   -webkit-box-pack: center;
@@ -120,7 +183,7 @@ body {
 .hero-wave {
   position: absolute;
   bottom: 0;
-  fill: rgb(29, 30, 33);
+  fill: #1c1f27;
   height: auto;
 }
 
@@ -236,21 +299,21 @@ body {
   margin: 0;
   background-color: rgb(10, 12, 16);
 }
-.about-us-header{
+
+.about-us-header {
   text-align: center;
   display: inline-block;
-  color: #00ffdc;
+  color: #ee82ee;
   font-size: 37px;
   font-weight: 900;
   border: none;
   letter-spacing: 5px;
-  padding: 50px 33px;
+  padding: 50px 33px 0 40px;
   margin: 0;
   background-color: rgb(10, 12, 16);
 }
 
 .info-text {
-  font-family: "Railway", sans-serif;
   text-align: center;
   color: #e12172;
   font-size: 17px;
@@ -360,7 +423,7 @@ body {
     top: 0;
     left: 0;
     margin: 5rem auto;
-  
+
   }
 
   .nav {
@@ -404,23 +467,17 @@ body {
 .circle {
   width: 15rem;
   height: 15rem;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(245, 70, 66, 0.75)),
-    to(rgba(8, 83, 156, 0.75))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(245, 70, 66, 0.75),
-    rgba(8, 83, 156, 0.75)
-  );
-  background: linear-gradient(
-    to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(8, 83, 156, 0.75)
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(rgba(245, 70, 66, 0.75)),
+      to(rgba(8, 83, 156, 0.75)));
+  background: -o-linear-gradient(left,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
   position: absolute;
   border-radius: 50%;
   z-index: -1;
@@ -489,7 +546,7 @@ body {
   top: 0;
   left: 0;
   margin: 5rem auto;
- 
+
 }
 
 hr:not([size]) {
@@ -499,26 +556,20 @@ hr:not([size]) {
   border-radius: 6px;
   background: rgb(10 12 16);
   /* https://cssgradient.io/ used for background gradient color*/
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(8%, rgba(2, 0, 36, 1)),
-    color-stop(52%, rgba(110, 9, 121, 1)),
-    color-stop(80%, rgba(0, 212, 255, 1))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(2, 0, 36, 1) 8%,
-    rgba(110, 9, 121, 1) 52%,
-    rgba(0, 212, 255, 1) 80%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 8%,
-    rgba(110, 9, 121, 1) 52%,
-    rgba(0, 212, 255, 1) 80%
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      color-stop(8%, rgba(2, 0, 36, 1)),
+      color-stop(52%, rgba(110, 9, 121, 1)),
+      color-stop(80%, rgba(0, 212, 255, 1)));
+  background: -o-linear-gradient(left,
+      rgba(2, 0, 36, 1) 8%,
+      rgba(110, 9, 121, 1) 52%,
+      rgba(0, 212, 255, 1) 80%);
+  background: linear-gradient(90deg,
+      rgba(2, 0, 36, 1) 8%,
+      rgba(110, 9, 121, 1) 52%,
+      rgba(0, 212, 255, 1) 80%);
 }
 
 /* Google maps styling */
@@ -638,29 +689,23 @@ div #map {
 #email,
 #name {
   font-family: "Railway", sans-serif;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(245, 70, 66, 0.75)),
-    to(rgba(8, 83, 156, 0.75))
-  );
-  background: linear-gradient(
-    to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(8, 83, 156, 0.75)
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(rgba(245, 70, 66, 0.75)),
+      to(rgba(8, 83, 156, 0.75)));
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
 }
 
 /* This will set custom textarea height to 10rem */
 #message {
   height: 10rem;
   font-family: "Railway", sans-serif;
-  background: linear-gradient(
-    to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(8, 83, 156, 0.75)
-  );
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
 }
 
 /* Footer section */
@@ -689,7 +734,7 @@ div #map {
 .media-links li a i:hover {
   background-color: #e64900;
   transform: scale(1.1);
-  
+
 }
 
 .footer-section {
@@ -698,11 +743,13 @@ div #map {
   overflow: hidden;
   text-align: center;
 }
+
 .fa-angle-double-down {
   font-size: 36px;
   color: #e12172;
   animation: pulse 1600ms infinite;
 }
+
 @keyframes pulse {
   50% {
     transform: translateY(-15px);
