@@ -583,6 +583,7 @@ div #map {
 }
 
 #neon-bg--image {
+  /* Photo used from the folowing :https://www.pexels.com/photo/woman-standing-beside-led-signage-1996911/ */
   background: url(../images/neon-signs.jpg);
   position: relative;
   background-repeat: no-repeat;

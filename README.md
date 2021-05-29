@@ -50,7 +50,7 @@ London Libre is a small business based in London. The business owner is an exp
 ## Technologies Used
 * [__HTML/HTML5__](https://developer.mozilla.org/en-US/docs/Web/HTML) used for a basic structure of the page and content.
 * [__CSS/CSS3__](https://developer.mozilla.org/en-US/docs/Web/CSS) used to add style to the page and its content.
-* [__JavaScript__](https://developer.mozilla.org/en-US/docs/Web/JavaScript) used to add interactivity to the page and using third party services.
+* [__JavaScript__](https://developer.mozilla.org/en-US/docs/Web/JavaScript) used to add interactivity to the page and for using third party services.
 
 ## Other Technologies used:
 * [__Bootstrap 5__](https://getboostrap.com) used as a framework to increase page responsivness .
@@ -63,6 +63,8 @@ London Libre is a small business based in London. The business owner is an exp
 * [__Google Fonts__](https://fonts.google.com) used for project fonts.
 * [__Gitpod__](https://gitpod.io) used as a development environment.
 * [__Canva__](https://www.canva.com) used for logo creating.
+* [__Autoprefixer__](https://autoprefixer.github.io/) used to add CSS predfixes and ensure cross-browser compatibility.
+* [__CSS Gradient__](https://cssgradient.io/) used for generating gradient colors.
 * [__Fontawesome__](https://fontawesome.com) used for adding icons.
 * [__Youtube__](https://www.youtube.com/) used as a general source of information.
 * [__W3Scool__](https://www.w3schools.com/) used as a general source of information.
@@ -75,14 +77,19 @@ London Libre is a small business based in London. The business owner is an exp
 * [__Am I Responsive__](http://ami.responsivedesign.is/) used during post deployment testing stage.
 * [__Pixlr__](https://pixlr.com) used to remove background and editing photographs.
 * [__Afinity__](https://affinity.serif.com/en-gb/photo/ ) used to remove background and editing photographs.
+* [Favicon generator](https://www.favicon-generator.org/)
 
 
 
 
 ## Project Wireframe Link :
-
+***
+To see Project Wireframes please click the link: <a href="https://github.com/kuzGo/project-MS2/tree/master/assets/wireframes">Wireframes</a> 
 
 ## Testing :
+Click the link to see testing of the website please in a separate file:
+
+<a href="https://github.com/kuzGo/project-MS2/blob/master/TESTING.md">TESTING.md</a>
 
 
 ## Deployment
@@ -90,7 +97,32 @@ London Libre is a small business based in London. The business owner is an exp
 
 ## Credits :
 
+### Content
+* [__51 State Festival__](https://www.51ststatefestival.com/) Link to offical website and a part of text used in Google Maps infowindow.
+* [__Kaleidoscope Festival__](https://kaleidoscope-festival.com/) Link to offical website and a part of text used in Google Maps infowindow.
+* [__All Points East Festival__](https://www.allpointseastfestival.com/) Link to offical website and a part of text used in Google Maps infowindow.
+* [__Junction 2 Festival__](https://www.junction2.london/) Link to offical website and a part of text used in Google Maps infowindow.
+* [__Gala Festival__](https://thisisgala.co.uk/) Link to offical website and a part of text used in Google Maps infowindow.
+* [__Wide Awake__](https://wideawakelondon.co.uk/) Link to offical website and a part of text used in Google Maps infowindow.
+* [__Yam Carnival__](https://yamcarnival.com/) Link to offical website used in Google Maps infowindow.
+* [__Hampton Court Palace Festival__](https://hamptoncourtpalacefestival.com/) Link to offical website used in Google Maps infowindow.
+* [__Radio Rooftop Bar__](https://radiorooftop.com/) Link to offical website and a part of text used in Google Maps infowindow.
 
+### Code snippets :
+
+* [__Dev Ed__](https://www.youtube.com/watch?v=XK7T3mY1V-w) Code snippet used from the video tutorial, however it was hugely refactored to fit my project needs.
+* [__Bootsrap Docs__](https://getbootstrap.com/docs/5.0/components/navbar/) Code snippet used from the Bootraps documentation, however it was hugely refactored to fit my project needs.
+* [__Google Developers Docs__](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration#maps_marker_animations_iteration-html) Used as a  solution for adding `setTimeout()` to markers.
+
+### Photographers :
+* Pexels :
+    * [Photo by Pixabay from Pexels](https://www.pexels.com/photo/three-lighted-bottles-274131)
+    * [Photo by Geraud Pfeiffer from Pexels](https://www.pexels.com/photo/glasses-of-fresh-icy-cocktails-on-marble-table-6542713/)
+    * [Video by Denys Gromov from Pexels](https://www.pexels.com/video/pouring-alcoholic-drink-on-a-cocktail-glass-4765778/)
+    * [Ike louie Natividad](https://www.pexels.com/photo/woman-standing-beside-led-signage-1996911/).
+
+* Pixabay :
+    * [Pixabay](https://pixabay.com/illustrations/heart-neon-color-red-neon-sign-3464049/).
 
 
 ## Acknowledgements
