@@ -11,6 +11,7 @@ let closeNavIcon = document.querySelector(".fa-align-right");
 let plusToClose = document.querySelector(".fa-plus");
 let closeNavButtom = document.querySelector(".navbar-toggler");
 let activeButton = document.querySelectorAll(".nav-link");
+let  backToTop = document.querySelector('.back-to-top');
 let aboutUs =
   "Here at London Libre we have a passion for cocktails and travel." +
   "The founder has traveled the world wile on cruise ships,making" +
@@ -85,4 +86,16 @@ confirmBtn.addEventListener("click", () => {
 notAllowBtn.addEventListener("click", () => {
   loaderText.innerHTML =
     "Sorry,we are not able to allow you access to site at this time.";
+});
+window.addEventListener('scroll',() => {
+if(window.pageYOffset > 500){
+  backToTop.classList.add("active-top")
+} else {
+  backToTop.classList.remove("active-top");
+}
+backToTop.addEventListener('click',() => {
+window.scrollTo({top:0});
+
+});
+
 });

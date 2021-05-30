@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Rock Salt", cursive;
+  font-family: "Rock Salt", sans-serif;
   min-height: 100vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -11,7 +15,6 @@ body {
   perspective: 2000px;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 .loader {
@@ -26,9 +29,9 @@ body {
 }
 
 .loader-text {
-  position: absolute;
+  position: fixed;
   margin-top: 250px;
-  top:15%;
+  top: 15%;
   font-family: "Railway", sans-serif;
   z-index: 1200;
   text-align: center;
@@ -39,9 +42,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
 .yes-btn {
-  position: absolute;
+  position: fixed;
   text-align: center;
   background-color: rgb(20, 67, 220);
   text-decoration: none;
@@ -59,7 +61,7 @@ body {
 }
 
 .no-btn {
-  position: absolute;
+  position: fixed;
   text-align: center;
   background-color: crimson;
   text-decoration: none;
@@ -195,7 +197,7 @@ body {
 }
 
 .hero-container {
-  height: 90vh;
+  height: 100vh;
   position: relative;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
@@ -375,10 +377,10 @@ body {
     0px 0px 50px rgba(155, 41, 216, 0.76);
 }
 ::-webkit-scrollbar,
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   border-radius: 10px;
   width: 10px;
-  background:transparent;
+  background: transparent;
 }
 /* Smartphones portrait and landscape orientation  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 823px) {
@@ -429,7 +431,6 @@ body {
     top: 0;
     left: 0;
     margin: 5rem auto;
-
   }
 
   .nav {
@@ -473,17 +474,23 @@ body {
 .circle {
   width: 15rem;
   height: 15rem;
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(rgba(245, 70, 66, 0.75)),
-      to(rgba(8, 83, 156, 0.75)));
-  background: -o-linear-gradient(left,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
-  background: linear-gradient(to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(245, 70, 66, 0.75)),
+    to(rgba(8, 83, 156, 0.75))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
   position: absolute;
   border-radius: 50%;
   z-index: -1;
@@ -552,7 +559,6 @@ body {
   top: 0;
   left: 0;
   margin: 5rem auto;
-
 }
 
 hr:not([size]) {
@@ -562,20 +568,26 @@ hr:not([size]) {
   border-radius: 6px;
   background: rgb(10 12 16);
   /* https://cssgradient.io/ used for background gradient color*/
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      color-stop(8%, rgba(2, 0, 36, 1)),
-      color-stop(52%, rgba(110, 9, 121, 1)),
-      color-stop(80%, rgba(0, 212, 255, 1)));
-  background: -o-linear-gradient(left,
-      rgba(2, 0, 36, 1) 8%,
-      rgba(110, 9, 121, 1) 52%,
-      rgba(0, 212, 255, 1) 80%);
-  background: linear-gradient(90deg,
-      rgba(2, 0, 36, 1) 8%,
-      rgba(110, 9, 121, 1) 52%,
-      rgba(0, 212, 255, 1) 80%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(8%, rgba(2, 0, 36, 1)),
+    color-stop(52%, rgba(110, 9, 121, 1)),
+    color-stop(80%, rgba(0, 212, 255, 1))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(2, 0, 36, 1) 8%,
+    rgba(110, 9, 121, 1) 52%,
+    rgba(0, 212, 255, 1) 80%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 8%,
+    rgba(110, 9, 121, 1) 52%,
+    rgba(0, 212, 255, 1) 80%
+  );
 }
 
 /* Google maps styling */
@@ -696,23 +708,29 @@ div #map {
 #email,
 #name {
   font-family: "Railway", sans-serif;
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(rgba(245, 70, 66, 0.75)),
-      to(rgba(8, 83, 156, 0.75)));
-  background: linear-gradient(to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(245, 70, 66, 0.75)),
+    to(rgba(8, 83, 156, 0.75))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
 }
 
 /* This will set custom textarea height to 10rem */
 #message {
   height: 10rem;
   font-family: "Railway", sans-serif;
-  background: linear-gradient(to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
 }
 
 /* Footer section */
@@ -741,7 +759,6 @@ div #map {
 .media-links li a i:hover {
   background-color: #e64900;
   transform: scale(1.1);
-
 }
 
 .footer-section {
@@ -750,7 +767,42 @@ div #map {
   overflow: hidden;
   text-align: center;
 }
-
+a.back-to-top i {
+  display: none;
+  pointer-events: none;
+  
+}
+.active-top {
+  display: block;
+  position: fixed;
+  z-index: 1390;
+  opacity: 1 !important;
+  transform: scale(1.1);
+  /* Icon creatd by Raj Dev:https://freeicons.io/technology-icons-2/asset-up-arrow-icon-19280 */
+  background: #cde600 url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:15px;
+  border-radius: 50%;
+  justify-content: space-around;
+  font-size: 28px;
+  text-decoration: none;
+  color: rgb(10 12 16);
+  width: 40px;
+  height: 40px;
+  align-items: flex-end;
+  color: rgb(10 12 16);
+  bottom: 20px;
+  right: 10px;
+  z-index: 1190;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.5s;
+  animation: pulse 2000ms infinite;
+}
+.active-top:hover{
+  background-color: #e64900;
+}
 .fa-angle-double-down {
   font-size: 36px;
   color: #e12172;

@@ -7,7 +7,7 @@
   <title>London Libre</title>
   <meta name="description" content="London Libre, Cocktail Bar Hire">
   <meta name="keywords" content="Cocktails, Bar hire,Music Festivals,Events,Cocktail bar,Mixology, Bartender">
-  <meta name="theme-color" content="#0a0c10"/>
+  <meta name="theme-color" content="#0a0c10" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
@@ -28,7 +28,7 @@
        
   </div>
   <!-- Navigation bar used from Bootstrap 5 https://getbootstrap.com/docs/5.0/components/navbar/ -->
-  <nav class="navbar fixed-top navbar-expand-lg">
+  <nav class="navbar fixed-top navbar-expand-lg" id="top">
     <div class="container-fluid">
       <a class="navbar-brand mr-4" href="index.html">
         <img src="assets/images/libre.png" alt="Company Logo" width="84" height="84"
@@ -137,8 +137,8 @@
       <h2 class="about-header">Or try it yourself:</h2>
       <p class="info-text">
         Click Random Mixology button bellow to try some of our recipes
-        <br/>
-        <br/>
+        <br />
+        <br />
         <i class="fas fa-angle-double-down"></i>
       </p>
     </div>
@@ -221,37 +221,43 @@
     </svg>
   </section>
   <!-- END of Contact form section  -->
-  <section class="footer-section">
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <h4>Let's get social <i class="fas fa-users"></i></h4>
-            <ul class="media-links">
-              <li class="media-links">
-                <a href="https://www.facebook.com" aria-label="Follow us on Facebook" rel="noopener" target="_blank"><i
-                    class="fab fa-facebook"></i></a>
-              </li>
-              <li class="media-links">
-                <a href="https://www.instagram.com" aria-label="Follow us on Instagram" rel="noopener"
-                  target="_blank"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li class="media-links">
-                <a href="https://www.linkedin.com/in/darko-doban-95822971/" aria-label="Follow us on Linkedin"
-                  rel="noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="media-links">
-                <a href="https://www.twitter.com" aria-label="Follow us on Twitted" rel="noopener" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <footer class="container-fluid footer-section">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Let's get social <i class="fas fa-users"></i></h4>
+        <ul class="media-links">
+          <li class="media-links">
+            <a href="https://www.facebook.com" aria-label="Follow us on Facebook" rel="noopener" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+          </li>
+          <li class="media-links">
+            <a href="https://www.instagram.com" aria-label="Follow us on Instagram" rel="noopener" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+          </li>
+          <li class="media-links">
+            <a href="https://www.linkedin.com/in/darko-doban-95822971/" aria-label="Follow us on Linkedin"
+              rel="noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li class="media-links">
+            <a href="https://www.twitter.com" aria-label="Follow us on Twitted" rel="noopener" target="_blank"></a>
+          </li>
+        </ul>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-12">
-        <h4>Wesite created by</h4>
+      <div class="col-sm-6">
+        <h4>Wesbite created by
+          <a href="https://www.linkedin.com/in/goran-kuzma/" class="media-links" aria-label="Link to Linkedin"
+            rel="noopener" target="_blank">Goran Kuzma</a>
+        </h4>
       </div>
-    </footer>
-  </section>
+      <div class="col-sm-12">
+        <a class="back-to-top" aria-label="Back to top button"></a>
+       </div>
+     </div>
+    </div>
+  </div>
+
+  </footer>
+
   <!-- Bootsrap's JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
@@ -264,6 +270,7 @@
   <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzjCtSn4eTgmVDARjqe09GAfI-W3DokUs&callback=initMap"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <!-- EmailJS  -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
