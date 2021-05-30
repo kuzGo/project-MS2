@@ -20,16 +20,23 @@
 </head>
 
 <body>
-  <div class="col-md-12 col-sm-12 col-lg-6 loader">
-    <div class="card2">
-      <div class="col-md-12 col-sm-12 col-lg-12">
-        <h3 class="loader-text">Confirm that you are under the legal drinking limit?</h3>
-        <button type="button" class="yes-btn">Yes</button>
-        <button type="button" class="no-btn">No</button>
+  <!-- Loads before landing page, age checker popoup -->
+  <div class="loader">
+    <div class="card-container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-12">
+          <div class="loader-card">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <h3 class="loader-text">Confirm that you are <br>under the legal drinking limit?</h3>
+              <button type="button" class="yes-btn">Yes</button>
+              <button type="button" class="no-btn">No</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
+
   <!-- Navigation bar used from Bootstrap 5 https://getbootstrap.com/docs/5.0/components/navbar/ -->
   <nav class="navbar fixed-top navbar-expand-lg" id="top">
     <div class="container-fluid">
@@ -44,7 +51,8 @@
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link home-link--text active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+            <a class="nav-link home-link--text active" aria-current="page" href="#"><i class="fas fa-home"></i>
+              Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link coctail-link--text" href="#cocktail"><i class="fas fa-cocktail"></i> Coctails</a>
@@ -251,11 +259,10 @@
           <a href="https://www.linkedin.com/in/goran-kuzma/" class="media-links" aria-label="Link to Linkedin"
             rel="noopener" target="_blank">Goran Kuzma</a>
           <p id="year"></p>
-
         </h4>
       </div>
       <div class="col-sm-12">
-        <a class="back-to-top" aria-label="Back to top button"></a>
+        <button class="back-to-top" type="button" aria-label="Back to top button"></button>
       </div>
     </div>
     </div>
