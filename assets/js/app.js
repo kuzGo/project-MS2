@@ -47,12 +47,12 @@ plusButton.addEventListener("click", (e) => {
 //credit for inspiration https://www.youtube.com/watch?v=dx4oAxaR1As
 barmanVid.addEventListener("mouseenter", function (event) {
   barmanVid.play();
-  barmanVid.style = "box-shadow:1px 1px 20px 9px #00ffdc"
+  barmanVid.style = "box-shadow:1px 1px 20px 9px #00ffdc";
   barmanVid.style.transition = "all 1.5s ease";
 });
 barmanVid.addEventListener("mouseout", (event) => {
   barmanVid.pause();
-  barmanVid.style = "box-shadow:none"
+  barmanVid.style = "box-shadow:none";
   barmanVid.style.transition = "all 1.5s ease";
 });
 buttonText.addEventListener("mouseover", (event) => {
