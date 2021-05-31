@@ -10,6 +10,7 @@ const rooftopButton = document.getElementById("drop-season");
 let closeNavIcon = document.querySelector(".fa-align-right");
 let plusToClose = document.querySelector(".fa-plus");
 let closeNavButtom = document.querySelector(".navbar-toggler");
+let navbarCollapse = document.getElementById("navbarToggler");
 let activeButton = document.querySelectorAll(".nav-link");
 let backToTop = document.querySelector(".back-to-top");
 let footerYear = document.getElementById("year");
@@ -80,6 +81,14 @@ activeButton.forEach((activeButton) => {
     activeButton.classList.toggle("active-button");
   });
 });
+//This event closes navbar on mobile devices when one of three buttons is clicked
+activeButton.forEach((activeButton) => {
+  activeButton.addEventListener("click", (e) => {
+    navbarCollapse.classList.toggle("show");
+    closeNavButtom.classList.toggle("collapsed");
+    closeNavIcon.classList.toggle("fa-times");
+  });
+});
 // Event listener will change burger button icon when clicked
 closeNavButtom.addEventListener("click", () => {
   closeNavIcon.classList.toggle("fa-times");
@@ -92,6 +101,7 @@ notAllowBtn.addEventListener("click", () => {
   loaderText.innerHTML =
     "Sorry,we are not able to allow you access to site at this time.";
 });
+// Scroll event listener attached to window displays back to top button 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 1000) {
     backToTop.classList.add("active-top");
@@ -102,4 +112,5 @@ window.addEventListener("scroll", () => {
     window.scrollTo({ top: 0 });
   });
 });
+// Updates footer's year 
 footerYear.innerHTML = new Date().getFullYear();
