@@ -32,7 +32,7 @@ body {
   position: fixed;
   margin-top: 250px;
   top: 15%;
-  font-family: "Railway", sans-serif;
+  font-family: "Raleway", sans-serif;
   z-index: 1200;
   text-align: center;
   bottom: 50%;
@@ -140,7 +140,6 @@ body {
   font-weight: 700;
   border-style: solid;
   border-radius: 23px;
-  background-color: transparent;
 }
 
 .home-link--text:hover {
@@ -405,9 +404,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 
   .card1 {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    width: 20rem;
+    width: 19rem;
     border-radius: 30px;
-    margin: 65px 300px;
+    margin: 65px 330px;
     height: 90%;
     padding: 1rem 3rem;
     left: 13%;
@@ -419,8 +418,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 
 
   .card2 {
     min-height: 90vh;
-    margin: 65px 300px;
-    width: 20rem;
+    margin: 65px 330px;
+    width: 19rem;
     height: 90vh;
     border-radius: 30px;
     padding: 1rem 1rem;
@@ -551,7 +550,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 
 
 .ingredients-list {
   list-style: none;
-  font-family: "Railway", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: justify;
   display: block;
   margin: 5px auto;
@@ -582,6 +581,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 
   left: 0;
   margin: 5rem auto;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 hr:not([size]) {
@@ -642,7 +642,7 @@ div #map {
   -webkit-box-shadow: 1px 1px 18px 4px #85e6f0;
   box-shadow: 1px 1px 18px 4px #85e6f0;
   letter-spacing: 0.269em;
-  font-family: "Railway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   border-style: none;
@@ -661,7 +661,7 @@ div #map {
   -webkit-box-shadow: 1px 1px 18px 4px#ee82ee;
   box-shadow: 1px 1px 18px 4px#ee82ee;
   letter-spacing: 0.269em;
-  font-family: "Railway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   border-style: none;
@@ -712,7 +712,7 @@ div #map {
   text-align: center;
   display: inline-block;
   color: #ee82ee;
-  font-family: "Railway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 45px;
   border: none;
   padding: 50px 50px;
@@ -724,13 +724,13 @@ div #map {
   color: #f7ff07;
   font-size: 22px;
   margin: 22px;
-  font-family: "Railway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* this code changes placeholder background color */
 #email,
 #name {
-  font-family: "Railway", sans-serif;
+  font-family: "Raleway", sans-serif;
   background: -webkit-gradient(
     linear,
     left top,
@@ -748,7 +748,7 @@ div #map {
 /* This will set custom textarea height to 10rem */
 #message {
   height: 10rem;
-  font-family: "Railway", sans-serif;
+  font-family: "Raleway", sans-serif;
   background: -webkit-gradient(
     linear,
     left top,
@@ -789,7 +789,7 @@ div #map {
   line-height: 32px;
   text-align: center;
   color: #282828;
-  background-color: #cde600;
+  background-color: #f7ff07;
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -797,7 +797,7 @@ div #map {
 }
 
 .media-links li a i:hover {
-  background-color: #e64900;
+  background-color: #e12172;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -812,6 +812,9 @@ div #map {
   overflow: hidden;
   text-align: center;
 }
+h5 {
+  color:rgb(10 12 16);
+}
 a.back-to-top i {
   display: none;
   pointer-events: none;
@@ -825,7 +828,7 @@ a.back-to-top i {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   /* Icon created by Raj Dev:https://freeicons.io/technology-icons-2/asset-up-arrow-icon-19280 */
-  background: #cde600 url(../images/arrow.png);
+  background: #f7ff07 url(../images/arrow.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
@@ -843,7 +846,7 @@ a.back-to-top i {
   align-items: flex-end;
   color: rgb(10 12 16);
   bottom: 20px;
-  right: 10px;
+  right: 6px;
   z-index: 1190;
   opacity: 1;
   -webkit-transition: all 0.5s;
@@ -853,7 +856,7 @@ a.back-to-top i {
   animation: pulse 2000ms infinite;
 }
 .active-top:hover {
-  background-color: #e64900;
+  background-color: #e12172;
 }
 .fa-angle-double-down {
   font-size: 36px;
