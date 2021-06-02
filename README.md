@@ -1,6 +1,8 @@
 # London Libre
 
-<p><img src="assets/docs/amiresponsive.png" style="min-width:100%" height="500" alt="Photo of website on devices"></p>
+## <p><img src="assets/docs/amiresponsive.png" style="min-width:100%" height="500" alt="Photo of website on devices"></p>
+---
+<p> <img src="assets/images/libre.webp" width="70" height="70" alt="Company logo"></p>
 
 - Link to live website : [London Libre](https://kuzgo.github.io/project-MS2/)
 
@@ -58,7 +60,8 @@ London Libre is a small business based in London. The business owner is an exp
 - Footer
   - The website footer is styled in a colorful way with a pink color which matches the "Get Quote" button from the top of the page. The features of the footer are three circle-shaped social link icons. The yellow color is also used for the labels in the contact section,maintaining consistency. Once the user hovers over them, the icons will slightly change size and background color indicating interaction. Prior to that there is a heading with the icons representing a group of people inviting the visitor to socialize. Every link to the social media will open in a separate window for user's convenience.Details of the website creator with the link to the LinkedIn which will also be open in a separate tab and the year when the site was created. As the design is based on a one-page website, the back-to-top button has been implemented which will bring the visitor back to the top of the page avoiding scrolling.
 - Color scheme
-  - Colour scheme has been created to represent the colours of the cocktails itself and to reflect a night out in a cocktail bar. Using my own initiative and judgement and having this in mind I wanted to create a fusion of colours and make the colour palette vibrant, and fun with neon shades witch match to the 3 bottles at the top of the home page. So I would create a unique and intuitive user experience.
+
+  - Colour scheme has been created to represent the colours of the cocktails itself and to reflect a night out in a cocktail bar. Using my own initiative and judgement and having this in mind I wanted to create a fusion of colours and make the colour palette vibrant, and fun with neon shades which match to the 3 bottles at the top of the home page. So I would create a unique and intuitive user experience.
     Colours used are:
   - Domiant color is `rgb(10, 12, 16)` a shade of black color which is a color of each section.
   - Home buton color is `#ee82ee`.
@@ -76,6 +79,9 @@ London Libre is a small business based in London. The business owner is an exp
   - The website fonts used are Google fonts [Rock salt](https://fonts.google.com/specimen/Rock+Salt?query=rock+salt#standard-styles) for headers.The header's  are sized quite large for easier readability and at the same time to create personal looking, almost handwriting or graffiti effect  .Google font's [Raleway](https://fonts.google.com/specimen/Raleway?query=raleway) font is used where more formal way of expressing was required , such as instructions or contact form labels.
 
 ## Features Left to Implement
+
+- Implementing CAPTCHA to the age verification popup for improvement of site's safety and security.
+- Ability to submit a client's review after tasting the cocktails or hiring.
 
 ## Technologies Used
 
@@ -96,6 +102,8 @@ London Libre is a small business based in London. The business owner is an exp
 - [**Online Convert**](https://image.online-convert.com) used to convert photos to webp format.
 - [**Google Fonts**](https://fonts.google.com) used for project fonts.
 - [**Gitpod**](https://gitpod.io) used as a development environment.
+- [**Gitpod Chrome Extension**](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki) used to open Github repo in Gitpod.
+- [**GitHub**](https://github.com/) used for storing repository and hosting deployed website.
 - [**Canva**](https://www.canva.com) used for logo creating.
 - [**Autoprefixer**](https://autoprefixer.github.io/) used to add CSS predfixes and ensure cross-browser compatibility.
 - [**CSS Gradient**](https://cssgradient.io/) used for generating gradient colors.
@@ -116,8 +124,6 @@ London Libre is a small business based in London. The business owner is an exp
 
 ## Project Wireframe Link :
 
----
-
 To see Project Wireframes please click the link: <a href="https://github.com/kuzGo/project-MS2/tree/master/assets/wireframes">Wireframes</a>
 
 ## Testing :
@@ -127,6 +133,43 @@ Click the link to see testing of the website please in a separate file:
 <a href="https://github.com/kuzGo/project-MS2/blob/master/TESTING.md">TESTING.md</a>
 
 ## Deployment
+
+The project's website code was written using Gitpod IDE. In order for code to be pushed to GitHub,it had to be added to stage for commit using `git add` command in GitPod's CLI .Once changes have been successfully added, it is required to commit these entering `git commit` into CLI. After commiting it then can be pushed to GitHub by enering `git push` command in CLI.
+- To deploy a website on Github the following steps are necessary:
+
+1. If you do not have one,create a [GitHub](https://github.com/) account and remain logged in.
+2. Navigate to repository stored on GitHub is named **_kuzGo/project-MS2_**
+3. Once the repository is selected in the top right corner are a few options, navigate to an option **Settings** .
+4. In **Settings** scroll down to the GitHub Pages section.
+5. Click drop down **"None"** button and select **master** branch.
+6. Click **"Save"**.
+
+- How to fork a repository: 
+Forking a repository allows you to make changes to the code without affecting the project.
+To fork a repository follow the next steps:
+1. Follow the steps 1 and 2 from the above instructions.
+2. Once **_kuzGo/project-MS2_** is located , in the top right corner find the "Fork" icon.
+3. Click the Fork icon to fork the repository.
+
+- How to clone repository: Cloning repository allows you to pull down a full copy of the repository and work on it locally on your machine. To clone a repository follow these steps:
+1. Navigate to **_kuzGo/project-MS2_** on GitHub.
+2. On the repository main page navigate to the "Code" drop down menu button and click on it.
+3. Ensure to select HTTPS and click on the clipboard icon to copy the URL.
+4. In the IDE you chose to work, open the new terminal.
+5. Change the current working directory location where you want the cloned directory.
+6. Enter command git clone and paste the URL you copied.
+7. Click Enter.
+Google Maps API :In order to use Google maps API a unique API key is required for usage and billing purposes. To retrieve your own API key and run the code using your own key follow these instructions:
+1. In your browser type in Google Maps JavaScript API.
+2. Select Google Maps Platform Documentation.
+3. Navigate to Go To the credentials page.
+4. You will be required to log in using your preferred email address.
+5. Navigate to credentials page.6. Click on + CREATE CREDENTIALS
+7. Name your project and copy the key.
+6. Ensure to restrict your API key to the URL's of the pages where the key will be used (e.g. GitHub) to avoid misuse and being overcharged for the same.
+7. In your IDE navigate to index.html file
+8. On the line 279 find `<script>` tag and paste your key straight after `"key="` sign.
+  - See example :   `<script async defer src="https://maps.googleapis.com/maps/api/js?key=`YOUR_API_KEY`&callback=initMap"  type="text/javascript"></script>`
 
 ## Credits :
 
@@ -163,3 +206,8 @@ Click the link to see testing of the website please in a separate file:
   - [Pixabay](https://pixabay.com/illustrations/heart-neon-color-red-neon-sign-3464049/).
 
 ## Acknowledgements
+- I wanted to thank [Nishant Kumar](https://github.com/nishant8BITS), for all the support and pieces of advice during  mentoring sessions of how to improve the project.
+- [Code Institute](https://codeinstitute.net/) for equipping me with the skills and knowledge to complete this project.
+- Friends and family for support and motivation.
+- Stephen Johnston for help with testing my project on Iphone devices.
+- [Shaun The Net Ninja ](https://github.com/iamshaunjp) for providing Modern JavaScript course which I also completed.
