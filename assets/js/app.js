@@ -21,6 +21,7 @@ let aboutUs =
   "cocktail bars. Now, at London Libre Bar, we can offer a diversity" +
   "of cocktails and service that fits all cultures and types of" +
   "events.We are specialised in weddings,corporate events,private events, festivals and concerts.";
+  // Credit for code snippet : https://www.youtube.com/watch?v=XK7T3mY1V-w
 //Movement Animation to happen
 const card = document.querySelector(".card1");
 //Items
@@ -38,6 +39,8 @@ card.addEventListener("mouseleave", (e) => {
   //Popback
   icyCocktail.style.transform = "translateZ(0px) rotateZ(0deg)";
 });
+// END OF CREDIT
+
 //Display about text when "find out" is clicked
 plusButton.addEventListener("click", (e) => {
   about.classList.toggle("show-about-text");
@@ -99,9 +102,9 @@ confirmBtn.addEventListener("click", () => {
 });
 notAllowBtn.addEventListener("click", () => {
   loaderText.innerHTML =
-    "Sorry,we are not able to allow you access to site at this time.";
+    "Sorry,we are not <br>able to allow you<br>access to site at this time.";
 });
-// Scroll event listener attached to window displays back to top button 
+// Scroll event listener attached to window displays back to top button
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 1000) {
     backToTop.classList.add("active-top");
@@ -112,5 +115,5 @@ window.addEventListener("scroll", () => {
     window.scrollTo({ top: 0 });
   });
 });
-// Updates footer's year 
+// Updates footer's year
 footerYear.innerHTML = new Date().getFullYear();
