@@ -29,8 +29,8 @@
               <h3 class="loader-text">
                 Are you of legal<br>drinking age?
               </h3>
-              <button type="button" class="yes-btn">Yes</button>
-              <button type="button" class="no-btn">No</button>
+              <button aria-label="Confirm" type="button" class="yes-btn">Yes</button>
+              <button aria-label="Unconfirm" type="button" class="no-btn">No</button>
             </div>
           </div>
         </div>
@@ -51,13 +51,13 @@
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link home-link--text" aria-current="page" href="#home"><i class="fas fa-home"></i> Home</a>
+            <a class="nav-link home-link--text" aria-current="page" href="#home" aria-label="Home button"><i class="fas fa-home"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link coctail-link--text" href="#cocktail"><i class="fas fa-cocktail"></i> Cocktails</a>
+            <a class="nav-link coctail-link--text" href="#cocktail" aria-label="Cocktails button"><i class="fas fa-cocktail"></i> Cocktails</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link contact-link--text" href="#form"><i class="far fa-envelope"></i> Contact</a>
+            <a class="nav-link contact-link--text" href="#form" aria-label="Contact button"><i class="far fa-envelope"></i> Contact</a>
           </li>
         </ul>
       </div>
@@ -75,7 +75,7 @@
     <div class="hero-container"></div>
     <h1 id="header-text">London Libre</h1>
     <p class="hero-text">Cocktails|Bar Hire|Events|Every Ocassion</p>
-    <a class="quote-btn" href="#form">Get a Quote! <br /><br /><i class="fas fa-angle-double-down"></i></a>
+    <a class="quote-btn" href="#form" aria-label="Get a quote">Get a Quote! <br /><br /><i class="fas fa-angle-double-down"></i></a>
   </section>
   <!-- END of Hero image section  -->
   <section class="about-section">
@@ -83,7 +83,7 @@
       <div class="row">
         <h2 class="about-header">Who We Are?</h2>
         <div class="col-md-6 col-sm-12" tabindex="-1">
-          <button class="about-us-header">
+          <button class="about-us-header" aria-label="Find out">
             Find Out More<span class="about-plus"><i class="fas fa-plus"></i></span>
           </button>
           <hr class="text-divide" />
@@ -105,7 +105,7 @@
     <div class="col-md-12 col-sm-12 barman">
       <div class="row">
         <!-- Video by Anthony Shkraba from Pexels https://www.pexels.com/video/bartender-making-a-drink-4485541/-->
-        <video src="assets/video/barman-mixing.mp4" alt="Bartender making a drink" class="barman-vid" muted loop tabindex="-1"></video>
+        <video src="assets/video/barman-mixing.mp4"  aria-label="Bartender making a drink" class="barman-vid" muted loop tabindex="-1"></video>
       </div>
     </div>
   </div>
@@ -113,7 +113,7 @@
   <!-- Google Maps section -->
   <div class="about-section" id="neon-bg--image">
     <!-- SVG crested using https://getwaves.io/ -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-label="Black curly banner" viewbox="0 0 1440 320">
       <path fill="#0a0c10" fill-opacity="1"
         d="M0,160L26.7,176C53.3,192,107,224,160,218.7C213.3,213,267,171,320,149.3C373.3,128,427,128,480,133.3C533.3,139,587,149,640,149.3C693.3,149,747,139,800,122.7C853.3,107,907,85,960,74.7C1013.3,64,1067,64,1120,58.7C1173.3,53,1227,43,1280,42.7C1333.3,43,1387,53,1413,58.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
       </path>
@@ -121,12 +121,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-sm-12">
-          <button id="drop" class="festivals">
+          <button id="drop" class="festivals" aria-label="Festival Markers">
             Fancy trying our cocktails?
           </button>
         </div>
         <div class="col-md-6 col-sm-12">
-          <button id="drop-season" class="rooftop">
+          <button id="drop-season" class="rooftop" aria-label="Bar Marker">
             Always mixing for you
           </button>
         </div>
@@ -167,7 +167,7 @@
             </div>
             <div class="info">
               <h2 class="title">Cocktails</h2>
-              <button type="button" class="random-cocktail">
+              <button type="button" class="random-cocktail" aria-label="Random Cocktail">
                 Random Mixology
               </button>
             </div>
@@ -189,7 +189,7 @@
   <!-- Contact form section  -->
   <section class="about-section" id="heart-bg--image">
     <!-- SVG crested using https://getwaves.io/ -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-label="Black curly banner" viewbox="0 0 1440 320">
       <path fill="#0a0c10" fill-opacity="1"
         d="M0,160L26.7,176C53.3,192,107,224,160,218.7C213.3,213,267,171,320,149.3C373.3,128,427,128,480,133.3C533.3,139,587,149,640,149.3C693.3,149,747,139,800,122.7C853.3,107,907,85,960,74.7C1013.3,64,1067,64,1120,58.7C1173.3,53,1227,43,1280,42.7C1333.3,43,1387,53,1413,58.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
       </path>
@@ -197,7 +197,7 @@
     <div class="container-fluid">
       <div class="row">
         <h2 class="form-text">How did that go?</h2>
-        <p class="form-text">Consider hiring a trusted professional?</p>
+        <h3 class="form-text">Consider hiring a trusted professional?</h3>
         <div class="col-md-12 col-sm-12 col-lg-6 offset-lg-3">
           <form id="form">
             <div>
@@ -215,7 +215,7 @@
               <textarea id="message" name="message" class="contact-form home-link--text"
                 placeholder="Your message"></textarea>
             </div>
-            <button id="submitBtn" type="submit" class="rooftop">
+            <button id="submitBtn" type="submit" class="rooftop" aria-label="Submit">
               Send!
             </button>
           </form>
@@ -223,7 +223,7 @@
       </div>
     </div>
     <!-- SVG crested using https://getwaves.io/ -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-label="Pink curly banner" viewbox="0 0 1440 320">
       <path fill="#eb04ef" fill-opacity="1"
         d="M0,224L15,202.7C30,181,60,139,90,122.7C120,107,150,117,180,133.3C210,149,240,171,270,176C300,181,330,171,360,165.3C390,160,420,160,450,165.3C480,171,510,181,540,170.7C570,160,600,128,630,117.3C660,107,690,117,720,122.7C750,128,780,128,810,133.3C840,139,870,149,900,170.7C930,192,960,224,990,213.3C1020,203,1050,149,1080,128C1110,107,1140,117,1170,149.3C1200,181,1230,235,1260,250.7C1290,267,1320,245,1350,213.3C1380,181,1410,139,1425,117.3L1440,96L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z">
       </path>
@@ -233,7 +233,7 @@
   <footer class="container-fluid footer-section">
     <div class="row">
       <div class="col-sm-6">
-        <h5>Let's get social <i class="fas fa-users"></i></h5>
+        <h4>Let's get social <i class="fas fa-users"></i></h4>
         <ul class="media-links">
           <li class="media-links">
             <a href="https://www.facebook.com" aria-label="Follow us on Facebook" rel="noopener" target="_blank"><i
@@ -253,12 +253,12 @@
         </ul>
       </div>
       <div class="col-sm-6">
-        <h5>
+        <h4>
           Wesbite created by <span>&copy;</span>
           <a href="https://www.linkedin.com/in/goran-kuzma/" class="media-links" aria-label="Link to Linkedin"
             rel="noopener" target="_blank">Goran Kuzma</a>
           <span id="year"></span>
-        </h5>
+        </h4>
       </div>
       <div class="col-sm-12">
         <button class="back-to-top" type="button" aria-label="Back to top button"></button>
