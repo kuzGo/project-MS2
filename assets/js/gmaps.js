@@ -75,6 +75,9 @@ const bars = [
   },
 ];
 // Declaring variables
+let mapId = document.getElementById("map");
+// icon used from : https://freeicons.io/
+let icon = "assets/images/icon.png";
 let markers = [];
 let map;
 let infowindow;
@@ -83,7 +86,8 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
     center: { lat: 51.5941, lng: -0.1298 },
-    scrollwheel:true,
+    scrollwheel:false,
+    draggable:true,
   });
   //  }
   infowindow = new google.maps.InfoWindow({
@@ -113,6 +117,7 @@ function addMarker(position, timeout, content) {
       title: "Click for info",
       map: map,
       animation: google.maps.Animation.DROP,
+      icon:icon,
     });
     google.maps.event.addListener(marker, "click", () => {
       infowindow.open(map, marker);
@@ -128,13 +133,16 @@ function clearMarkers() {
   }
   markers = [];
 }
+
 // This code invokes function which drops markers when button "Off Season"is clicked
 let barMarkers = document.getElementById("drop-season");
 barMarkers.addEventListener("click", (event) => {
   dropBars();
+  mapId.scrollIntoView();
 });
 // This code invokes function which drops markers when button "Music Festivals"is clicked
 let festivalMarkers = document.getElementById("drop");
 festivalMarkers.addEventListener("click", (event) => {
   dropFestival();
+  mapId.scrollIntoView();
 });
