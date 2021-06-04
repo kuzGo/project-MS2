@@ -470,14 +470,24 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 
     justify-content: center;
   }
   .loader-card {
-    width: 20rem;
+    width: 19rem;
   }
 }
-@media(hover:none){
-  #hero-img,#neon-bg--image,#heart-bg--image {
-    background-attachment: initial;
-  }
+/* Targeting IOS devices to display background images:  https://css-tricks.com/snippets/css/media-queries-for-standard-devices/  */
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #hero-img,
+    #neon-bg--image,
+    #heart-bg--image {
+      background-attachment: initial!important;
+    }
+    .loader-text{
+      top: 14%;
+    }
 }
+
 .icy-cocktail {
   min-height: 15vh;
   display: -webkit-box;
@@ -848,7 +858,7 @@ h4 {
   width: 40px;
   height: 40px;
   pointer-events: all;
-  bottom: 20px;
+  bottom: 70px;
   right: 6px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
