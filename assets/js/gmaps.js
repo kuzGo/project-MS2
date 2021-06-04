@@ -77,7 +77,7 @@ const bars = [
 // Declaring variables
 let mapId = document.getElementById("map");
 // icon used from : https://freeicons.io/
-let icon = "assets/images/icon.png";
+let icon = {url:'assets/images/icon.webp'};
 let markers = [];
 let map;
 let infowindow;
