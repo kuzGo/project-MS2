@@ -45,7 +45,6 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 .loader-card {
-  margin-top: 100px;
   width: 28rem;
   height: 700px;
   border-radius: 30px;
@@ -58,6 +57,7 @@ body {
 .yes-btn {
   position: fixed;
   text-align: center;
+  color:#c6cfd6;
   background-color: rgb(20, 67, 220);
   text-decoration: none;
   line-height: 261%;
@@ -75,6 +75,7 @@ body {
 .no-btn {
   position: fixed;
   text-align: center;
+  color:#c6cfd6;
   background-color: crimson;
   text-decoration: none;
   line-height: 261%;
@@ -359,7 +360,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 70px;
-  background-color: rgb(10 12 16);
+  /* background-color: rgb(10 12 16); */
 }
 
 .card1 {
@@ -472,7 +473,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 
     width: 20rem;
   }
 }
-
+@media(hover:none){
+  #hero-img,#neon-bg--image,#heart-bg--image {
+    background-attachment: initial;
+  }
+}
 .icy-cocktail {
   min-height: 15vh;
   display: -webkit-box;
@@ -817,14 +822,15 @@ div #map {
 h4 {
   color: rgb(10 12 16);
 }
-a.back-to-top i {
+
+.back-to-top {
   display: none;
   pointer-events: none;
 }
 .active-top {
   display: block;
   position: fixed;
-  z-index: 1390;
+  z-index: 1190;
   opacity: 1 !important;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -836,21 +842,14 @@ a.back-to-top i {
   background-size: 15px;
   border-radius: 50%;
   border: none;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
   font-size: 28px;
   text-decoration: none;
   color: rgb(10 12 16);
   width: 40px;
   height: 40px;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  color: rgb(10 12 16);
+  pointer-events: all;
   bottom: 20px;
   right: 6px;
-  z-index: 1190;
-  opacity: 1;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
