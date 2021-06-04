@@ -59,6 +59,17 @@ barmanVid.addEventListener("mouseout", (event) => {
   barmanVid.style = "box-shadow:none";
   barmanVid.style.transition = "all 1.5s ease";
 });
+barmanVid.addEventListener("touchstart", (event) => {
+  barmanVid.play();
+  barmanVid.style = "box-shadow:1px 1px 20px 9px #00ffdc";
+ barmanVid.style.transition = "all 1.5s ease";
+});
+barmanVid.addEventListener("touchend", (event) => {
+  barmanVid.pause();
+  barmanVid.style = "box-shadow:1px 1px 20px 9px #00ffdc";
+ barmanVid.style.transition = "all 1.5s ease";
+});
+
 buttonText.addEventListener("mouseover", (event) => {
   buttonText.innerText = "Music Events";
 });
@@ -106,7 +117,7 @@ notAllowBtn.addEventListener("click", () => {
 });
 // Scroll event listener attached to window displays back to top button
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 1000) {
+  if (window.pageYOffset > 100) {
     backToTop.classList.add("active-top");
   } else {
     backToTop.classList.remove("active-top");
