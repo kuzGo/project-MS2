@@ -35,9 +35,9 @@ At various stages of the project development I have been using extensive testin
 
 The warnings displayed are due to Jigsaw's inability to validate/recognise certain CSS methods.
 
-<p><img src="assets/docs/css-validator-warnings.PNG" style="min-width:50%" height="400" alt="CSS Validator"></p>
+<p><img src="assets/docs/css-validator-warnings.PNG" style="min-width:50%" height="600" alt="CSS Validator"></p>
 
-<p><img src="assets/docs/css-validator-warnings2.PNG" style="min-width:50%" height="400" alt="CSS Validator"></p>
+<p><img src="assets/docs/css-validator-warnings2.PNG" style="min-width:50%" height="600" alt="CSS Validator"></p>
 
 - Early JavaScript code validation results :
 
@@ -45,4 +45,68 @@ The warnings displayed are due to Jigsaw's inability to validate/recognise certa
 
 <p><img src="assets/docs/emails-JSHint.PNG" style="min-width:50%" height="400" alt="EmailJs JShint Validator"></p>
 
+- Results received for undefined variable emailjs are due to mandatory process of installation and EmailJS implementation , based on that variable will have to remain as is in order to be functionable.
+
 <p><img src="assets/docs/emails-JSHint2.PNG" style="min-width:50%" height="400" alt="EmailJs JShint Validator"></p>
+
+- app.js (where custon JavaScript code is stored) early results
+  - One unused variable warning has been fixed by refactoring the code.
+
+ <p><img src="assets/docs/app.js-JSHint.PNG" style="min-width:60%" height="600" alt="app.js JShint Validator"></p>
+
+- Google maps code validation :
+ - There are a couple of warnings shown but these are due to Google specific variables required in order for Google Maps API implementation and will remain the same.
+initMap function is part of the `<script>` tag code located in index.html ( line 283):
+
+ `<script defer
+    src="https://maps.googleapis.com/maps/api/js?key=xxxxxxx-W3DokUs&callback=initMap"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>`
+
+- Cocktails.js code validation :
+ - cocktails.js code has been validated showing no errors. The warnings displayed in this image are cleared by adding `/*jshint esversion: 6 */` at the top of JSHint.
+
+ <p><img src="assets/docs/cocktails-JSHint.PNG" style="min-width:60%" height="600" alt="cocktails.js JShint Validator"></p>
+
+
+- Lighthouse reports ran for both mobile and desktops:
+
+  - Lighthouse mobile devices report:
+
+  <p><img src="assets/docs/mobile devices lighthouse.PNG" style="min-width:60%" height="600" alt="cocktails.js JShint Validator"></p>
+
+  - Lighthouse desktop devices report:
+
+
+ <p><img src="assets/docs/desktop Lighthouse.PNG" style="min-width:60%" height="600" alt="cocktails.js JShint Validator"></p>
+
+
+ ### Testing of finalized version of the website:
+  - Results of JavaScrit code validation:
+
+  <p><img src="assets/docs/maps-final-test.PNG" style="min-width:60%" height="600" alt=" JShint Validator"></p>
+
+  <p><img src="assets/docs/email.js-final-test.PNG" style="min-width:60%" height="600" alt=" JShint Validator"></p>
+
+   <p><img src="assets/docs/cocktail.js-final-test.PNG" style="min-width:60%" height="600" alt=" JShint Validator"></p>
+
+   <p><img src="assets/docs/app.js-final-test.PNG" style="min-width:60%" height="600" alt=" JShint Validator"></p>
+
+
+   - Results of CSS code validation:
+      - Code shows no errors.Note: Warnings are due to prefixes added using Autoprefixer to ensure cross-browser compatibility.     
+
+   <a href="assets/docs/css-final-test.pdf" target="_blank" >Link to CSS Validation PDF Document</a>
+
+   <p><img src="assets/docs/css-test-photo.PNG" style="min-width:60%" height="400" alt="CSS Validator"></p>
+
+  - Results of HTML code validation:
+
+    - Code shows no errors.Warnings are due to JavaScript  code inside `<script>`  tag which was copied from official documentation in order for code to work.
+
+
+     <a href="assets/docs/html-final-doc.pdf" target="_blank" >Link to HTML Validation PDF Document</a>
+
+
+      <p><img src="assets/docs/html-final-test.PNG" style="min-width:60%" height="400" alt="HTML Validator"></p>
+
+    
