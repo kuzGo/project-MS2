@@ -144,14 +144,14 @@ The project's website code was written using Gitpod IDE. In order for code to be
 5. Click drop down **"None"** button and select **master** branch.
 6. Click **"Save"**.
 
-- How to fork a repository: 
+- How to **fork** a repository: 
 Forking a repository allows you to make changes to the code without affecting the project.
 To fork a repository follow the next steps:
 1. Follow the steps 1 and 2 from the above instructions.
 2. Once **_kuzGo/project-MS2_** is located , in the top right corner find the "Fork" icon.
 3. Click the Fork icon to fork the repository.
 
-- How to clone repository: Cloning repository allows you to pull down a full copy of the repository and work on it locally on your machine. To clone a repository follow these steps:
+- How to **clone** repository: Cloning repository allows you to pull down a full copy of the repository and work on it locally on your machine. To clone a repository follow these steps:
 1. Navigate to **_kuzGo/project-MS2_** on GitHub.
 2. On the repository main page navigate to the "Code" drop down menu button and click on it.
 3. Ensure to select HTTPS and click on the clipboard icon to copy the URL.
@@ -159,7 +159,7 @@ To fork a repository follow the next steps:
 5. Change the current working directory location where you want the cloned directory.
 6. Enter command git clone and paste the URL you copied.
 7. Click Enter.
-Google Maps API :In order to use Google maps API a unique API key is required for usage and billing purposes. To retrieve your own API key and run the code using your own key follow these instructions:
+- **Google Maps API** :In order to use Google maps API, an unique API key is required for usage and billing purposes. To retrieve your own API key and run the code using your own key follow these instructions:
 1. In your browser type in Google Maps JavaScript API.
 2. Select Google Maps Platform Documentation.
 3. Navigate to Go To the credentials page.
@@ -192,6 +192,7 @@ Google Maps API :In order to use Google maps API a unique API key is required fo
 - [**Bootsrap Docs**](https://getbootstrap.com/docs/5.0/components/navbar/) Code snippet used from the Bootraps documentation, however it was hugely refactored to fit my project needs.
 - [**Google Developers Docs**](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration#maps_marker_animations_iteration-html) Used as a solution for adding `setTimeout()` to markers.
 - [**WS3**](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) code for styling a scrollbar.
+- [**CSS Tricks**](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) for IOS devices breakpoints.
 
 ### Photographers :
 
