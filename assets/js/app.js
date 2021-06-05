@@ -21,7 +21,7 @@ let aboutUs =
   "cocktail bars. Now, at London Libre Bar, we can offer a diversity" +
   "of cocktails and service that fits all cultures and types of" +
   "events.We are specialised in weddings,corporate events,private events, festivals and concerts.";
-  // Credit for code snippet : https://www.youtube.com/watch?v=XK7T3mY1V-w
+// Credit for code snippet : https://www.youtube.com/watch?v=XK7T3mY1V-w
 //Movement Animation to happen
 const card = document.querySelector(".card1");
 //Items
@@ -59,15 +59,16 @@ barmanVid.addEventListener("mouseout", (event) => {
   barmanVid.style = "box-shadow:none";
   barmanVid.style.transition = "all 1.5s ease";
 });
+// Targeting IOS devices
 barmanVid.addEventListener("touchstart", (event) => {
   barmanVid.play();
   barmanVid.style = "box-shadow:1px 1px 20px 9px #00ffdc";
- barmanVid.style.transition = "all 1.5s ease";
+  barmanVid.style.transition = "all 1.5s ease";
 });
 barmanVid.addEventListener("touchend", (event) => {
   barmanVid.pause();
   barmanVid.style = "box-shadow:1px 1px 20px 9px #00ffdc";
- barmanVid.style.transition = "all 1.5s ease";
+  barmanVid.style.transition = "all 1.5s ease";
 });
 
 buttonText.addEventListener("mouseover", (event) => {
