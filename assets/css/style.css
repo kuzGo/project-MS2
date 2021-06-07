@@ -461,7 +461,7 @@ font-size: 14px;
 line-height: 26px;
 }
 .active-top{
-bottom: 70px;
+bottom: 70px!important;
 }
 }
 /* Targeting IOS devices to display background images:  https://css-tricks.com/snippets/css/media-queries-for-standard-devices/  */

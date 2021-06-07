@@ -1,4 +1,4 @@
-// Declaring variable to get a referennce to form in index.html
+// Declaring variable to get a reference to form in index.html
 let form = document.getElementById("form");
 // Adding submit event to form button
 form.addEventListener("submit", function (event) {
@@ -9,13 +9,13 @@ form.addEventListener("submit", function (event) {
   const emailTempl = "template_0tmi3wk";
 
   emailjs.sendForm(id, emailTempl, this).then(() => {
-    //Notifies the user that email was succsesfully sent
-    alert("Email sent !!.Thank you for your email");
+    //Notifies the user that email was successfully sent
+    alert("Email sent !! Thank you for your email");
       // Resets form inputs
       form.reset();
   },
     (err) => {
-      //Notifies the user about any possible errors occured with submission
+      //Notifies the user about any possible errors occurred with submission
       alert(JSON.stringify(err));
   });
 });

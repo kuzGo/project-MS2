@@ -9,7 +9,7 @@ cocktailName.addEventListener("click", (event) => {
     .then(function (response) {
       // Check if the status is not OK
       if (response.status !== 200) {
-        // Logs the error message of the resonse status
+        // Logs the error message of the response status
         console.log("Error fetching data" + response.status);
         return;
       }
@@ -31,11 +31,11 @@ const getCocktail = function (cocktail) {
   cocktailNameDisplayed.innerHTML = cocktail.strDrink;
   // An empty array where ingredients will be pushed
   const ingridients = [];
-  // Iterates trough 15 Ingredients and measures
+  // Iterates through 15 Ingredients and measures
   for (let i = 1; i < 16; i++) {
     // Check if both ingredients and measures have some values 
     if (cocktail[`strIngredient${i}`] && cocktail[`strMeasure${i}`]) {
-      // Pushes measures and ingeadients to an array
+      // Pushes measures and ngredients to an array
       ingridients.push(
         `${cocktail[`strMeasure${i}`]}:${cocktail[`strIngredient${i}`]}`
       );

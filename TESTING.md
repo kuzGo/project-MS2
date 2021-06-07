@@ -1,7 +1,9 @@
 ## Testing :
 ### Testing and debugging during the development:
 ---
-At various stages of the project development I have been using extensive testing of the website. Main tools used to test the website are [**Google Dev Tools**](https://developer.chrome.com/docs/devtools/),[**Firefox Dev Tools**](https://developer.mozilla.org/en-US/docs/Tools) . To validate the code  I have been using  [**W3C Markup Validator**](https://validator.w3.org/), [**W3C CSS Validatior - Jigsaw**](https://jigsaw.w3.org/css-validator/)  and also [**JSHint**](https://jshint.com/). During the development process I encountered a certain amount of issues and bugs in the code.
+At various stages of the project development I have been using extensive testing of the website.
+
+ Main tools used to test the website are [**Google Dev Tools**](https://developer.chrome.com/docs/devtools/),[**Firefox Dev Tools**](https://developer.mozilla.org/en-US/docs/Tools) . To validate the code  I have been using  [**W3C Markup Validator**](https://validator.w3.org/), [**W3C CSS Validator - Jigsaw**](https://jigsaw.w3.org/css-validator/)  and also [**JSHint**](https://jshint.com/). During the development process I encountered a certain amount of issues and bugs in the code.
 - One of the first issues I came across during the early test stage was a contrast issue. This was discovered while using the Firefox Dev tool to check accessibility. This was ever since fixed by changing the color which met WCAG standards for accessible text. 
 <p><img src="assets/docs/MS2 contrast issue.PNG" style="min-width:70%" height="300" alt="Photo of  landing page testing"></p>
 
@@ -157,7 +159,12 @@ initMap function is part of the `<script>` tag code located in index.html ( line
 
 ### Functionality testing :
 
- - As part of functionality testing the developer tested every part of the website to ensure that everything is working properly on different types of devices and screen sizes: 
+ - As part of functionality testing the developer tested every part of the website to ensure that everything is working properly on different types of devices and screen sizes. Browsers that the website has been tested on are as follows:Google Chrome, Firefox, Microsoft Edge and Safari on Apple devices.Testing of the website was conducted on numerous devices that I and my close relatives and friends own,these are as follows  : Samsung S10E, Samsung S20, Pixel3a,Nokia 7.2 ,iPhone 8Plus,iPhone XS. Laptop Google Pixelbook and Desktop screen sizes all report no issues.
+ - Age checker popup:
+ 1. The age checker popup will be displayed prior to the user visiting the site.
+ 2. The user will be asked to confirm whether or not they are allowed to consume alcoholic beverages. 
+ 3. If the Yes button is clicked, the user will be allowed access to the site.
+ 4. If the No button is clicked, the message will be displayed to the user explaining that unfortunately, they will not be able to gain access and the Yes button will disappear since the user is considered below the legal age limit.
  - Navigation bar:
  1. Once hovering over navigation bar links,the buttons will change the size, button's background will become darker and the color slightly change around the Home, Cocktails, and Contact links.
  2. When the Cocktails button is clicked, the page will smoothly scroll the content and bring the user to the sections with some random cocktail recipes .
@@ -175,7 +182,7 @@ initMap function is part of the `<script>` tag code located in index.html ( line
 - Watch me mixing: 
 
 1. When the user hovers over the video on their desktop,the video will be  playing the content with the bartender demonstrating how the cocktails are made.On mobile devices, the user will be able to play the video by touching the screen.Decision to whether or not watch the video is left to the user to decide,without automatically playing the video they might not want to watch.
-2. Along with playing the video, the color will surrounding the video will change, indicating that the video is being played.
+2. Along with playing the video, the color surrounding the video will change, indicating that the video is being played.
 
 - Google map:
 
@@ -216,4 +223,4 @@ festivals. 
 2. Each button will change a background color and size when hovered over.
 3. Each link will open in a separate window.
 4. Details with the webpage creator with the link to LinkedIn opened in a separate tab.
-5. Animated back-to-top button will when hovered change the color and when clicked shoothly scroll to the top of the webpage.
+5. Animated back-to-top button will when hovered change the color and when clicked smoothly scroll to the top of the webpage.

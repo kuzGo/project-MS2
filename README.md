@@ -18,14 +18,17 @@ London Libre is a small business based in London. The business owner is an exp
 
 - User 2 : As a user I want to ensure some of my favorite cocktails can be made before hiring.
 
-- User 3 : As a user I want to be able to contact service provider and get a quote.
+- User 3 : As a user I want to be able to contact service providers and get a quote.
 
-- User 4 : As a user I want to be able to connect with the bussines owner on social media.
+- User 4 : As a user I want to be able to connect with the business owner on social media.
 
 ## Existing features
 
+- 404.html page
+  In case the user didn't not enter the correct link to the website, the 404.html page will load, informing the user to return to the home page by clicking the button provided.
 - Age confirmation popup
   - Prior to landing on the homepage of the website, users are asked to confirm that their age group is in line with the law before  visiting a website whose business is making and selling alcoholic beverages.
+ 
 - Navigation Bar Menu
   - Navigation bar menu is positioned on the top of the website for the user's easy navigation through the different sections of the website. The navigation bar is designed with the company logo  and three other buttons,Home, Cocktails and Contact button.
 - Home
@@ -35,7 +38,7 @@ London Libre is a small business based in London. The business owner is an exp
 - Contact
   - Contact is a part of the navigation bar and will bring the user to the section of the page where they will be able to contact the business owner with any questions they might have.
 - Hero Image
-  - Hero image of three bottles with neon lights glowing effect indicating to the users the theme of the entire website and what the website purpose is. The colors of each bottle matches the shape of the colors of three navigation bar buttons.
+  - Hero image of three bottles with neon lights glowing effect indicating to the users the theme of the entire website and what the website purpose is. The colors of each bottle match the shape of the colors of three navigation bar buttons.
   - Hero image heading and informative text present to the user what the business of the owner is before they continue with browsing the website .
   - The Get Quote button is a part of the hero image section and invites potential users to contact the business owner should they want to get a quote for one of the options the business owner can offer. When this button is clicked it will bring the user to the contact section where they can make an inquiry.
   - A chewron animation is pulsing and directing the visitor of the website to scroll below and browse the website.
@@ -63,20 +66,20 @@ London Libre is a small business based in London. The business owner is an exp
 
   - Colour scheme has been created to represent the colours of the cocktails itself and to reflect a night out in a cocktail bar. Using my own initiative and judgement and having this in mind I wanted to create a fusion of colours and make the colour palette vibrant, and fun with neon shades which match to the 3 bottles at the top of the home page. So I would create a unique and intuitive user experience.
     Colours used are:
-  - Domiant color is `rgb(10, 12, 16)` a shade of black color which is a color of each section.
-  - Home buton color is `#ee82ee`.
+  - Dominant color is `rgb(10, 12, 16)` a shade of black color which is a color of each section.
+  - Home button color is `#ee82ee`.
   - Cocktail button color is `#7690fc`.
   - Contact button as well as the first Google maps button color is `#85e6f0`.
   - Hero image header color used is `#1dea7d` which has a contrast ratio of 13.11.
   - Hero image text content color used is `#edf109` which has a contrast ratio of 17.18.
-  - Get Quote button and footer section color is `#eb04ef`.
+  - Get Quote button and the footer section color is `#eb04ef`.
   - Headings are colored with `#ee82ee` which has a contrast ratio of 8.44.This color has also been used for the second Google maps button and contact form button.
   - Text content in the cocktails section is styled using `#e12172`.
   - Contact form label text and footer's social media icons color used is `#f7ff07` which has a contrast ratio of 19.26.
-  - To style video and an image of the owner the color used is `#00ffdc`.
+  - To style a video and an image of the owner the color used is `#00ffdc`.
 
 - Typography
-  - The website fonts used are Google fonts [Rock salt](https://fonts.google.com/specimen/Rock+Salt?query=rock+salt#standard-styles) for headers.The header's  are sized quite large for easier readability and at the same time to create personal looking, almost handwriting or graffiti effect  .Google font's [Raleway](https://fonts.google.com/specimen/Raleway?query=raleway) font is used where more formal way of expressing was required , such as instructions or contact form labels.
+  - The website fonts used are Google fonts [Rock salt](https://fonts.google.com/specimen/Rock+Salt?query=rock+salt#standard-styles) for headers.The header's  are sized quite large for easier readability and at the same time to create personal looking, almost handwriting or graffiti effect  .Google font's [Raleway](https://fonts.google.com/specimen/Raleway?query=raleway) font is used where a more formal way of expressing was required , such as instructions or contact form labels.
 
 ## Features Left to Implement
 
@@ -91,11 +94,11 @@ London Libre is a small business based in London. The business owner is an exp
 
 ## Other Technologies used:
 
-- [**Bootstrap 5**](https://getboostrap.com) used as a framework to increase page responsivness .
+- [**Bootstrap 5**](https://getboostrap.com) used as a framework to increase page responsiveness .
 - [**Google Maps API**](https://developers.google.com/maps) used for displaying maps.
-- [**The CocktailDB API**](https://www.thecocktaildb.com/api.php) used as a free source for cocktail recepies.
-- [**Google Dev Tools**](https://developer.chrome.com/docs/devtools/) used for developing and testing web page.
-- [**Firefox Dev Tools**](https://developer.mozilla.org/en-US/docs/Tools) used for developing and testing web page.
+- [**The CocktailDB API**](https://www.thecocktaildb.com/api.php) used as a free source for cocktail recipes.
+- [**Google Dev Tools**](https://developer.chrome.com/docs/devtools/) used for developing and testing webpage.
+- [**Firefox Dev Tools**](https://developer.mozilla.org/en-US/docs/Tools) used for developing and testing webpage.
 - [**EmailJS**](https://www.emailjs.com/) used to connect users with the owner via the contact form.
 - [**Get Waves**](https://getwaves.io/) used to generate SVG banners.
 - [**Balsamiq**](https://balsamiq.com) used for creating a wireframe.
@@ -104,8 +107,8 @@ London Libre is a small business based in London. The business owner is an exp
 - [**Gitpod**](https://gitpod.io) used as a development environment.
 - [**Gitpod Chrome Extension**](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki) used to open Github repo in Gitpod.
 - [**GitHub**](https://github.com/) used for storing repository and hosting deployed website.
-- [**Canva**](https://www.canva.com) used for logo creating.
-- [**Autoprefixer**](https://autoprefixer.github.io/) used to add CSS predfixes and ensure cross-browser compatibility.
+- [**Canva**](https://www.canva.com) used for logo creation.
+- [**Autoprefixer**](https://autoprefixer.github.io/) used to add CSS prefixes and ensure cross-browser compatibility.
 - [**CSS Gradient**](https://cssgradient.io/) used for generating gradient colors.
 - [**Fontawesome**](https://fontawesome.com) used for adding icons.
 - [**Youtube**](https://www.youtube.com/) used as a general source of information.
@@ -114,7 +117,7 @@ London Libre is a small business based in London. The business owner is an exp
 - [**Pixabay**](https://pixabay.com/) used to download the website's images.
 - [**Stackoverflow**](https://stackoverflow.com/) used as a general source of information.
 - [**W3C Markup Validator**](https://validator.w3.org/) Used to test HTML code validation.
-- [**W3C CSS Validatior - Jigsaw**](https://jigsaw.w3.org/css-validator/) Used to test CSS code validation.
+- [**W3C CSS Validator - Jigsaw**](https://jigsaw.w3.org/css-validator/) Used to test CSS code validation.
 - [**JSHint**](https://jshint.com/) Used to test JavaScript code validation.
 - [**Am I Responsive**](http://ami.responsivedesign.is/) used during post deployment testing stage.
 - [**Pixlr**](https://pixlr.com) used to remove background and editing photographs.
@@ -134,14 +137,14 @@ Click the link to see testing of the website please in a separate file:
 
 ## Deployment
 
-The project's website code was written using Gitpod IDE. In order for code to be pushed to GitHub,it had to be added to stage for commit using `git add` command in GitPod's CLI .Once changes have been successfully added, it is required to commit these entering `git commit` into CLI. After commiting it then can be pushed to GitHub by enering `git push` command in CLI.
+The project's website code was written using Gitpod IDE. In order for code to be pushed to GitHub,it had to be added to stage for commit using `git add` command in GitPod's CLI .Once changes have been successfully added, it is required to commit these entering `git commit` into CLI. After committing it then can be pushed to GitHub by entering `git push` command in CLI.
 - To deploy a website on Github the following steps are necessary:
 
 1. If you do not have one,create a [GitHub](https://github.com/) account and remain logged in.
 2. Navigate to repository stored on GitHub is named **_kuzGo/project-MS2_**
 3. Once the repository is selected in the top right corner are a few options, navigate to an option **Settings** .
 4. In **Settings** scroll down to the GitHub Pages section.
-5. Click drop down **"None"** button and select **master** branch.
+5. Click the drop down **"None"** button and select **master** branch.
 6. Click **"Save"**.
 
 - How to **fork** a repository: 
@@ -164,32 +167,33 @@ To fork a repository follow the next steps:
 2. Select Google Maps Platform Documentation.
 3. Navigate to Go To the credentials page.
 4. You will be required to log in using your preferred email address.
-5. Navigate to credentials page.6. Click on + CREATE CREDENTIALS
+5. Navigate to the credentials page.
+6. Click on + CREATE CREDENTIALS
 7. Name your project and copy the key.
-6. Ensure to restrict your API key to the URL's of the pages where the key will be used (e.g. GitHub) to avoid misuse and being overcharged for the same.
-7. In your IDE navigate to index.html file
-8. On the line 279 find `<script>` tag and paste your key straight after `"key="` sign.
+8. Ensure to restrict your API key to the URL's of the pages where the key will be used (e.g. GitHub) to avoid misuse and being overcharged for the same.
+9. In your IDE navigate to index.html file
+10. On line 279 find the `<script>` tag and paste your key straight after the `"key="` sign.
   - See example :   `<script async defer src="https://maps.googleapis.com/maps/api/js?key=`YOUR_API_KEY`&callback=initMap"  type="text/javascript"></script>`
 
 ## Credits :
 
 ### Content
 
-- [**51 State Festival**](https://www.51ststatefestival.com/) Link to offical website and a part of text used in Google Maps infowindow.
-- [**Kaleidoscope Festival**](https://kaleidoscope-festival.com/) Link to offical website and a part of text used in Google Maps infowindow.
-- [**All Points East Festival**](https://www.allpointseastfestival.com/) Link to offical website and a part of text used in Google Maps infowindow.
-- [**Junction 2 Festival**](https://www.junction2.london/) Link to offical website and a part of text used in Google Maps infowindow.
-- [**Gala Festival**](https://thisisgala.co.uk/) Link to offical website and a part of text used in Google Maps infowindow.
-- [**Wide Awake**](https://wideawakelondon.co.uk/) Link to offical website and a part of text used in Google Maps infowindow.
-- [**Yam Carnival**](https://yamcarnival.com/) Link to offical website used in Google Maps infowindow.
-- [**Hampton Court Palace Festival**](https://hamptoncourtpalacefestival.com/) Link to offical website used in Google Maps infowindow.
-- [**Radio Rooftop Bar**](https://radiorooftop.com/) Link to offical website and a part of text used in Google Maps infowindow.
+- [**51 State Festival**](https://www.51ststatefestival.com/) Link to official website and a part of text used in Google Maps infowindow.
+- [**Kaleidoscope Festival**](https://kaleidoscope-festival.com/) Link to official website and a part of text used in Google Maps infowindow.
+- [**All Points East Festival**](https://www.allpointseastfestival.com/) Link to official website and a part of text used in Google Maps infowindow.
+- [**Junction 2 Festival**](https://www.junction2.london/) Link to official website and a part of text used in Google Maps infowindow.
+- [**Gala Festival**](https://thisisgala.co.uk/) Link to official website and a part of text used in Google Maps infowindow.
+- [**Wide Awake**](https://wideawakelondon.co.uk/) Link to official website and a part of text used in Google Maps infowindow.
+- [**Yam Carnival**](https://yamcarnival.com/) Link to official website used in Google Maps infowindow.
+- [**Hampton Court Palace Festival**](https://hamptoncourtpalacefestival.com/) Link to official website used in Google Maps infowindow.
+- [**Radio Rooftop Bar**](https://radiorooftop.com/) Link to official website and a part of text used in Google Maps infowindow.
 - [**Freeicons**](https://freeicons.io/technology-icons-2/asset-up-arrow-icon-19280) an arrow icon used from Raj Dev - Freeicons
 
 ### Code snippets :
 
 - [**Dev Ed**](https://www.youtube.com/watch?v=XK7T3mY1V-w) Code snippet used from the video tutorial, however it was hugely refactored to fit my project needs.
-- [**Bootsrap Docs**](https://getbootstrap.com/docs/5.0/components/navbar/) Code snippet used from the Bootraps documentation, however it was hugely refactored to fit my project needs.
+- [**Bootstrap Docs**](https://getbootstrap.com/docs/5.0/components/navbar/) Code snippet used from the Bootstrap documentation, however it was hugely refactored to fit my project needs.
 - [**Google Developers Docs**](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration#maps_marker_animations_iteration-html) Used as a solution for adding `setTimeout()` to markers.
 - [**WS3**](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) code for styling a scrollbar.
 - [**CSS Tricks**](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) for IOS devices breakpoints.
@@ -207,8 +211,9 @@ To fork a repository follow the next steps:
   - [Pixabay](https://pixabay.com/illustrations/heart-neon-color-red-neon-sign-3464049/).
 
 ## Acknowledgements
-- I wanted to thank [Nishant Kumar](https://github.com/nishant8BITS), for all the support and pieces of advice during  mentoring sessions of how to improve the project.
+- I wanted to thank [Nishant Kumar](https://github.com/nishant8BITS), for all the support and pieces of advice during  mentoring sessions on how to improve the project.
 - [Code Institute](https://codeinstitute.net/) for equipping me with the skills and knowledge to complete this project.
 - Friends and family for support and motivation.
-- Stephen Johnston for help with testing my project on Iphone devices.
+- Some parts of the README.md file have been used in my previous project.
+- The Code institute alumni Stephen Johnston for help with testing my project on Iphone devices.
 - [Shaun The Net Ninja ](https://github.com/iamshaunjp) for providing Modern JavaScript course which I also completed.

@@ -15,7 +15,7 @@ const festivals = [
     },
   },
   {
-    possition: { lat: 51.424, lng: -0.0691 },
+    position: { lat: 51.424, lng: -0.0691 },
     content: {
       html:
         '<h4>South Facing Festival</h4><p>South Facing Festival is a brand new outdoor concert series coming to Crystal Palace Park.</p><a href="https://southfacingfestival.com/" target="_blank">See official website</a>',
