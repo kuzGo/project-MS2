@@ -108,13 +108,13 @@ activeButton.forEach((activeButton) => {
 closeNavButtom.addEventListener("click", () => {
   closeNavIcon.classList.toggle("fa-times");
 });
-
 confirmBtn.addEventListener("click", () => {
   loader.classList.add("d-none");
 });
 notAllowBtn.addEventListener("click", () => {
   loaderText.innerHTML =
     "Sorry,we are not <br>able to allow you<br>access to site at this time.";
+    confirmBtn.style.display = "none";
 });
 // Scroll event listener attached to window displays back to top button
 window.addEventListener("scroll", () => {
