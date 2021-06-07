@@ -57,3 +57,17 @@ const getCocktail = function (cocktail) {
     displayIngreList.innerHTML = displayIngrediens;
   }
 };
+// Displays a random cocktail before user clicks button
+const showDefaultCocktail = () => {
+    const defaultCocktail = {
+        "strDrink": "Lone Tree Cocktail",
+        "strInstructions": "Stir ingredients with ice, strain into a cocktail glass, and serve.",
+        "strIngredient1": "Sweet Vermouth",
+        "strIngredient2": "Gin",
+        "strMeasure1": "3/4 oz ",
+        "strMeasure2": "1 1/2 oz ",
+    };
+    getCocktail(defaultCocktail);
+  };
+  
+  showDefaultCocktail();
