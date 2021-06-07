@@ -456,8 +456,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-
+h4{
+font-size: 14px;
+line-height: 26px;
+}
+.active-top{
+bottom: 70px;
+}
 }
 /* Targeting IOS devices to display background images:  https://css-tricks.com/snippets/css/media-queries-for-standard-devices/  */
 @media only screen 
@@ -471,6 +476,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2 
   }
   .loader-text {
     top: 14%;
+    margin-top: 225px;
   }
   .random-cocktail {
     left: 11% !important;
@@ -719,6 +725,20 @@ div #map {
     background: -o-linear-gradient(left, rgba(245, 70, 66, 0.75), rgba(8, 83, 156, 0.75));
     background: linear-gradient(to right, rgba(245, 70, 66, 0.75), rgba(8, 83, 156, 0.75));
 }
+.input-txt::-webkit-input-placeholder {
+color: #85e6f0a1;
+}
+.input-txt:-moz-placeholder {
+ color: #85e6f0a1;
+ opacity: 1;
+ }
+ .input-txt::-moz-placeholder {
+color: #85e6f0a1;
+opacity: 1;
+}
+.input-txt-ms-input-placeholder {
+color: #85e6f0a1;
+}
 
 /* Footer section */
 .media-links {
@@ -793,7 +813,7 @@ h4 {
     width: 40px;
     height: 40px;
     pointer-events: all;
-    bottom: 70px;
+    bottom: 20px;
     right: 6px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
